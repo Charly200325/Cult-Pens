@@ -1,0 +1,24 @@
+
+{% for link in linklists.main-menu.links %}
+  {% if link.title == "Brands" %}
+    {% for brandSection in link.links %}
+      <h2>{{ brandSection.title }}</h2>
+      <ul>
+      {% for brand in brandSection.links %}
+        <li><a href="{{ brand.url }}">{{ brand.title }}</a></li>
+      {% endfor %}
+      </ul>
+    {% endfor %}
+  {% endif %}
+{% endfor %}
+  
+{% schema %}
+  {
+    "name": "All Brands",
+    "presets": [
+      {
+      "name": "All Brands"
+      }
+    ]
+  }
+{% endschema %}

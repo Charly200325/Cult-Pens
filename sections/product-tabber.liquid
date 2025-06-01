@@ -1,0 +1,491 @@
+<style>
+     @media(max-width: 769px){
+  .accordion-header img{
+      padding-right: 8px;
+  }
+   .cv_Collection_form_product {
+      gap: 8px;
+      flex-direction: column;
+  }
+
+    /*----*/
+  .accordion {
+  margin:10px 0px;
+  }
+
+  .accordion-header,
+  .accordion-body {
+    background: white;
+  }
+       .accordion-body__contents{padding:1em; background: #f6f6f6;}
+  .accordion-header {
+      font-family: 'Test Sohne';
+      font-style: normal;
+      font-weight: 700;
+      font-size: 14px;
+      line-height: 16px;
+      letter-spacing: 2px;
+      text-transform: uppercase;
+      padding: 20px;
+      background: #F6F6F6;
+      color: #000;
+      cursor: pointer;
+      transition: all .3s;
+  }
+
+  .accordion__item {
+      border-bottom: 2px solid #81818121;
+  }
+
+  .accordion__item .accordion__item {
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+  }
+
+  .accordion-body {
+
+    color: #000;
+    display: none;
+  }
+
+  .accordion:first-child > .accordion__item > .accordion-header {
+    border-bottom: 1px solid transparent;
+  }
+
+  .accordion__item > .accordion-header:after {
+    content: "\f3d0";
+    font-family: IonIcons;
+    font-size: 1.2em;
+    float: right;
+    position: relative;
+    top: -2px;
+    transition: .3s all;
+    transform: rotate(0deg);
+  }
+
+  .accordion__item.active > .accordion-header:after {
+    transform: rotate(-180deg);
+  }
+
+  .accordion__item.active .accordion-header {
+       background: #F5A201;
+      color: #fff;
+      border-bottom: 1px solid #cf904d;
+  }
+
+  .accordion__item .accordion__item .accordion-header {
+    background: #f1f1f1;
+    color: #353535;
+  }
+
+    @media(max-width: 768px){.desk{display: none !important;}}
+</style>
+  <div class="ad">
+  <template class="ad__mobile">
+    <div class="accordion js-accordion season_tabs mob">
+      <div class="accordion__item js-accordion-item active">
+        <div class="accordion-header js-accordion-header">Detail</div>
+        <div class="accordion-body js-accordion-body">
+          <div class="accordion-body__contents">
+            <div class="product-description rte" data-product-description>
+              <div class="data-container">
+                {% if product.description != blank %}
+                  {% if block.settings.display == 'tab_open' or block.settings.display == 'tab_closed' %}
+                    {%- liquid
+                      assign description_title = 'products.product.description' | t
+                      assign description_is_open = false
+                      if block.settings.display == 'tab_open'
+                        assign description_is_open = true
+                      endif
+                    -%}
+
+                    <div class="product-detail-accordion" data-show-in-quickbuy="{{ block.settings.show_in_quickbuy }}">
+                      {% render 'accordion',
+                        allow_multi_open: true,
+                        add_content_class: 'rte',
+                        first_item_open: description_is_open,
+                        item1_title: description_title,
+                        item1_content: product.description
+                      %}
+                    </div>
+                  {% else %}
+                    <div
+                      class="product-description rte product-detail__gap-lg"
+                      data-show-in-quickbuy="{{ block.settings.show_in_quickbuy }}"
+                      {{ block.shopify_attributes }}
+                    >
+                      {{ product.description }}
+                    </div>
+                  {% endif %}
+                {% endif %}
+
+                {% if product.metafields.custom.advanced_mechanism != blank
+                  or product.metafields.custom.product_code != blank
+                  or product.metafields.custom.ink_colour != blank
+                  or product.metafields.custom.ink_type != blank
+                  or product.metafields.custom.item_colour != blank
+                  or product.metafields.custom.item_material != blank
+                  or product.metafields.custom.refill_type != blank
+                  or product.metafields.custom.tip_material != blank
+                  or product.metafields.custom.tip_size != blank
+                  or product.metafields.custom.tip_type != blank
+                %}
+                  <div class="additional_information ">
+                    <div class="heading">Additional information</div>
+                    <div class="row container">
+                      <div class="col-1">
+                        {% if product.metafields.custom.product_code != blank %}
+                          <div class="detail-container">
+                            <div class="label">Product Code:</div>
+                            <div class="metafield-container">{{ product.metafields.custom.product_code }}</div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.advanced_mechanism != blank %}
+                          <div class="detail-container">
+                            <div class="label">Advance Mechanism:</div>
+                            <div class="metafield-container">
+                              {{ product.metafields.custom.advanced_mechanism }}
+                            </div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.ink_colour != blank %}
+                          <div class="detail-container">
+                            <div class="label">Ink Colour:</div>
+                            <div class="metafield-container">
+                              {{ product.metafields.custom.ink_colour }}
+                            </div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.ink_type != blank %}
+                          <div class="detail-container">
+                            <div class="label">Ink Type:</div>
+                            <div class="metafield-container">
+                              {{ product.metafields.custom.ink_type }}
+                            </div>
+                          </div>
+                        {% endif %}
+                      </div>
+
+                      <div class="col-2">
+                        {% if product.metafields.custom.item_colour != blank %}
+                          <div class="detail-container">
+                            <div class="label">Item Colour:</div>
+                            <div class="metafield-container">
+                              {{ product.metafields.custom.item_colour }}
+                            </div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.item_material != blank %}
+                          <div class="detail-container">
+                            <div class="label">Item Material:</div>
+                            <div class="metafield-container">{{ product.metafields.custom.item_material }}</div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.refill_type != blank %}
+                          <div class="detail-container">
+                            <div class="label">Refill Type:</div>
+                            <div class="metafield-container">{{ product.metafields.custom.refill_type }}</div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.tip_material != blank %}
+                          <div class="detail-container">
+                            <div class="label">Tip Material:</div>
+                            <div class="metafield-container">{{ product.metafields.custom.tip_material }}</div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.tip_size != blank %}
+                          <div class="detail-container">
+                            <div class="label">Tip Size:</div>
+                            <div class="metafield-container">{{ product.metafields.custom.tip_size }}</div>
+                          </div>
+                        {% endif %}
+
+                        {% if product.metafields.custom.tip_type != blank %}
+                          <div class="detail-container">
+                            <div class="label">Tip Type:</div>
+                            <div class="metafield-container">{{ product.metafields.custom.tip_type }}</div>
+                          </div>
+                        {% endif %}
+                      </div>
+                    </div>
+                  </div>
+                {% endif %}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      {% if product.metafields.my_fields.delivery != blank %}
+        <div class="accordion__item js-accordion-item ">
+          <div class="accordion-header js-accordion-header">Detail</div>
+          <div class="accordion-body js-accordion-body">
+            <div class="accordion-body__contents">
+              <div class="rte ">
+                <div class=" season_content">{{ product.metafields.my_fields.delivery }}</div>
+              </div>
+            </div>
+          </div>
+        </div>
+      {% endif %}
+
+      <div class="accordion__item js-accordion-item ">
+        <div class="accordion-header js-accordion-header">Delivery</div>
+        <div class="accordion-body js-accordion-body">
+          <div class="accordion-body__contents">
+            <div class="rte">
+              <div class="season_content">
+                {{ product.metafields.custom.delivery }}
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion__item js-accordion-item ">
+        <div class="accordion-header js-accordion-header">Reviews</div>
+        <div class="accordion-body js-accordion-body">
+          <div class="accordion-body__contents">
+            <div class="rte">
+              <div class="season_content">
+                <!-- TrustBox widget - Product Reviews SEO -->
+                <div
+                  class="trustpilot-widget"
+                  data-locale="en-GB"
+                  data-template-id="5717796816f630043868e2e8"
+                  data-businessunit-id="4bde2152000064000506885a"
+                  data-style-height="700px"
+                  data-style-width="100%"
+                  data-theme="light"
+                  data-sku="{{ product.variants | map: 'sku' | join: "," }}"
+                  data-name="{{ product.title }}"
+                  data-review-languages="en"
+                  data-no-reviews="collapse"
+                  data-fullwidth="true"
+                >
+                  <a href="https://uk.trustpilot.com/review/www.cultpens.com" target="_blank" rel="noopener"
+                    >Trustpilot</a
+                  >
+                </div>
+                <!-- End TrustBox widget -->
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+
+      <div class="accordion__item js-accordion-item ">
+        <div class="accordion-header js-accordion-header">Refills & Spares</div>
+        <div class="accordion-body js-accordion-body">
+          <div class="accordion-body__contents">
+            <div class="rte">
+              <div class="season_content">
+                <div class="spare">
+                  <div class="class">{% render 'collections-product', collection: collection, block: block %}</div>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </template>
+  <template class="ad__desktop">
+    <div class="desktop-tab">
+      <ul class="tabs">
+        <div class="container">
+          <li class="tab-link current" data-tab="tab-1">Detail</li>
+          {% if product.metafields.custom.delivery != blank %}
+            <li class="tab-link" data-tab="tab-2">Delivery</li>
+          {% endif %}
+          <li class="tab-link" data-tab="tab-3">Reviews</li>
+          <li class="tab-link" data-tab="tab-4">Refills & Spares</li>
+        </div>
+      </ul>
+      <div id="tab-1" class="tab-content current container">
+        <div class="data-container {% if  product.metafields.custom.advanced_mechanism == blank or  product.metafields.custom.product_code == blank  or   product.metafields.custom.ink_colour == blank or  product.metafields.custom.ink_type == blank or  product.metafields.custom.item_colour == blank or  product.metafields.custom.item_material == blank or  product.metafields.custom.refill_type == blank or product.metafields.custom.tip_material == blank or product.metafields.custom.tip_size == blank or product.metafields.custom.tip_type == blank %} value-empty {% endif %}">
+          {% if product.description != blank %}
+            {% if block.settings.display == 'tab_open' or block.settings.display == 'tab_closed' %}
+              {%- liquid
+                assign description_title = 'products.product.description' | t
+                assign description_is_open = false
+                if block.settings.display == 'tab_open'
+                  assign description_is_open = true
+                endif
+              -%}
+
+              <div class="product-detail-accordion" data-show-in-quickbuy="{{ block.settings.show_in_quickbuy }}">
+                {% render 'accordion',
+                  allow_multi_open: true,
+                  add_content_class: 'rte',
+                  first_item_open: description_is_open,
+                  item1_title: description_title,
+                  item1_content: product.description
+                %}
+              </div>
+            {% else %}
+              <div
+                class="product-description rte product-detail__gap-lg"
+                data-show-in-quickbuy="{{ block.settings.show_in_quickbuy }}"
+                {{ block.shopify_attributes }}
+              >
+                {{ product.description }}
+              </div>
+            {% endif %}
+          {% endif %}
+
+          {% if product.metafields.custom.advanced_mechanism != blank
+            or product.metafields.custom.product_code != blank
+            or product.metafields.custom.ink_colour != blank
+            or product.metafields.custom.ink_type != blank
+            or product.metafields.custom.item_colour != blank
+            or product.metafields.custom.item_material != blank
+            or product.metafields.custom.refill_type != blank
+            or product.metafields.custom.tip_material != blank
+            or product.metafields.custom.tip_size != blank
+            or product.metafields.custom.tip_type != blank
+          %}
+            <div class="additional_information ">
+              <div class="heading">Additional information</div>
+              <div class="row container">
+                <div class="col-1">
+                  {% if product.metafields.custom.product_code != blank %}
+                    <div class="detail-container">
+                      <div class="label">Product Code:</div>
+                      <div class="metafield-container">{{ product.metafields.custom.product_code }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.advanced_mechanism != blank %}
+                    <div class="detail-container">
+                      <div class="label">Advance Mechanism:</div>
+                      <div class="metafield-container">
+                        {{ product.metafields.custom.advanced_mechanism }}
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.ink_colour != blank %}
+                    <div class="detail-container">
+                      <div class="label">Ink Colour:</div>
+                      <div class="metafield-container">
+                        {{ product.metafields.custom.ink_colour }}
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.ink_type != blank %}
+                    <div class="detail-container">
+                      <div class="label">Ink Type:</div>
+                      <div class="metafield-container">
+                        {{ product.metafields.custom.ink_type }}
+                      </div>
+                    </div>
+                  {% endif %}
+                </div>
+
+                <div class="col-2">
+                  {% if product.metafields.custom.item_colour != blank %}
+                    <div class="detail-container">
+                      <div class="label">Item Colour:</div>
+                      <div class="metafield-container">
+                        {{ product.metafields.custom.item_colour }}
+                      </div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.item_material != blank %}
+                    <div class="detail-container">
+                      <div class="label">Item Material:</div>
+                      <div class="metafield-container">{{ product.metafields.custom.item_material }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.refill_type != blank %}
+                    <div class="detail-container">
+                      <div class="label">Refill Type:</div>
+                      <div class="metafield-container">{{ product.metafields.custom.refill_type }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.tip_material != blank %}
+                    <div class="detail-container">
+                      <div class="label">Tip Material:</div>
+                      <div class="metafield-container">{{ product.metafields.custom.tip_material }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.tip_size != blank %}
+                    <div class="detail-container">
+                      <div class="label">Tip Size:</div>
+                      <div class="metafield-container">{{ product.metafields.custom.tip_size }}</div>
+                    </div>
+                  {% endif %}
+
+                  {% if product.metafields.custom.tip_type != blank %}
+                    <div class="detail-container">
+                      <div class="label">Tip Type:</div>
+                      <div class="metafield-container">{{ product.metafields.custom.tip_type }}</div>
+                    </div>
+                  {% endif %}
+                </div>
+              </div>
+            </div>
+          {% endif %}
+        </div>
+      </div>
+      <div id="tab-2" class="tab-content  container">
+        {{ product.metafields.custom.delivery }}
+      </div>
+      <div id="tab-3" class="tab-content  container">
+        <!-- TrustBox widget - Product Reviews SEO -->
+        <div
+          class="trustpilot-widget"
+          data-locale="en-GB"
+          data-template-id="5717796816f630043868e2e8"
+          data-businessunit-id="4bde2152000064000506885a"
+          data-style-height="700px"
+          data-style-width="100%"
+          data-theme="light"
+          data-sku="{{ product.variants | map: 'sku' | join: "," }}"
+          data-name="{{ product.title }}"
+          data-review-languages="en"
+          data-no-reviews="show"
+          data-fullwidth="true"
+        >
+          <a href="https://uk.trustpilot.com/review/www.cultpens.com" target="_blank" rel="noopener">Trustpilot</a>
+        </div>
+        <!-- End TrustBox widget -->
+      </div>
+      <div id="tab-4" class="tab-content  container">
+        <div class="spare">
+          <div class="class">{% render 'collections-product', collection: collection, block: block %}</div>
+        </div>
+      </div>
+    </div>
+  </template>
+  <script>
+    const isMobile = matchMedia('(max-device-width: 768px)').matches;
+    const ad = document.currentScript.closest('.ad');
+    const content = ad.querySelector(isMobile ? '.ad__mobile' : '.ad__desktop').content;
+
+    ad.appendChild(document.importNode(content, true));
+  </script>
+</div>
+{% schema %}
+  {
+    "name": "Product Tabber",
+    "settings": [],
+    "presets": [
+      {
+        "name": "Product Tabber"
+      }
+    ]
+  }
+{% endschema %}

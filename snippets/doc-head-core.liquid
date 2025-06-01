@@ -1,0 +1,51 @@
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>
+  {%- if request.page_type == 'password' -%}
+    {{- shop.name -}}
+  {%- else -%}
+    {{- page_title -}}
+    {%- if current_tags %}{% assign meta_tags = current_tags | join: ', ' %} &ndash; {{ 'general.meta.tags' | t: tags: meta_tags }}{% endif -%}
+    {%- if current_page != 1 %} &ndash; {{ 'general.meta.page' | t: page: current_page }}{% endif -%}
+    {%- unless page_title contains shop.name %} &ndash; {{ shop.name }}{% endunless -%}
+  {%- endif -%}
+</title>
+
+{% comment %} Set Cannonical to Parent on Child Products (SellersDash) {% endcomment %}
+{% assign shsd_shop_settings = shop.metafields.sellersdash.shsd_settings %}
+{%- if shsd_shop_settings.set_cannonical_on_children and template contains "product" -%}
+{%- assign shsd_product_details = product.metafields.sellersdash.shsdproducts -%}
+{% if shsd_product_details.product_type == "shsd_child" %}
+<link rel="cannonical" href="{{shop.url}}/products/{{shsd_product_details.parent_handle}}">
+{%- elsif canonical_url != blank -%}
+<link rel="canonical" href="{{ canonical_url }}">
+{%- endif -%}
+{%- else -%}
+{%- if canonical_url != blank -%}
+<link rel="canonical" href="{{ canonical_url }}">
+{%- endif -%}
+{%- endif -%}
+
+{% comment %}Redirect to parent from child if option turned on(SellersDash) {% endcomment %}
+{% assign shsd_shop_settings = shop.metafields.sellersdash.shsd_settings %}
+{% if shsd_shop_settings.redirect_to_parent_product and template contains "product" %}
+{%- assign shsd_product_details = product.metafields.sellersdash.shsdproducts -%}
+{% if shsd_product_details.product_type == "shsd_child" %}
+<script> window.location.href = "{{shop.url}}/products/{{shsd_product_details.parent_handle}}";</script>
+{% endif %}
+{% endif %}
+
+{%- if settings.favicon != blank -%}
+  {%- liquid
+    assign image_type = settings.favicon | split: '?' | first | split: '.' | last | downcase
+    if image_type == 'svg'
+      assign image_type = 'svg+xml'
+    endif
+  -%}
+  <link rel="icon" href="{{ settings.favicon | image_url: width: 48, height: 48 }}" type="image/{{ image_type }}">
+  <link rel="apple-touch-icon" href="{{ settings.favicon | image_url: width: 180, height: 180 }}">
+{%- endif -%}
+
+{%- if page_description -%}
+  <meta name="description" content="{{ page_description | escape }}">
+{%- endif -%}

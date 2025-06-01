@@ -1,0 +1,435 @@
+<style>
+    @media only screen and (max-width: 767px) {
+      .klevuLanding {
+        min-height: 5900px !important;
+      }
+    }
+</style>
+<script>
+localStorage.setItem('klv_sort_productList', '');
+    klevu.afterTemplateRender('landing, catnav', function (data, scope) {
+      var customStyleContent = `
+          @media only screen and (max-width: 767px) {
+            .klevuLanding {
+              min-height: unset !important;
+            }
+          }`;
+      klevu.dom.helpers.addElementToHead({
+        name: "Klevu Collection Theme",
+        content: customStyleContent,
+        type: "css"
+      });
+    });
+  </script>
+<div class="page-width">
+  <h1>{{ page.title }}</h1>
+  <div class="klevuLanding">
+  </div>
+</div>
+<!-- klevu search template start-->
+<script type="klevu/template" id="klevuLandingTemplateResults">
+      <div class="kuResultsListing">
+          <div class="productList klevuMeta" data-section="productList">
+              <div class="kuResultContent">
+                  <div class='customButtons mobile'>
+                      <div class='filterBtn'>
+                        <svg xmlns="http://www.w3.org/2000/svg" width="800px" height="800px" viewBox="0 0 24 24" fill="none" stroke="#000000" stroke-width="0.24000000000000005" transform="matrix(-1, 0, 0, -1, 0, 0)rotate(90)">
+                          <g id="SVGRepo_bgCarrier" stroke-width="0"/>
+                          <g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/>
+                          <g id="SVGRepo_iconCarrier"> <path d="M5 12L5 4" stroke="#212121" stroke-linecap="round"/> <path d="M19 20L19 17" stroke="#212121" stroke-linecap="round"/> <path d="M5 20L5 16" stroke="#212121" stroke-linecap="round"/> <path d="M19 13L19 4" stroke="#212121" stroke-linecap="round"/> <path d="M12 7L12 4" stroke="#212121" stroke-linecap="round"/> <path d="M12 20L12 11" stroke="#212121" stroke-linecap="round"/> <circle cx="5" cy="14" r="2" fill="none" stroke="#212121" stroke-linecap="round"/> <circle cx="12" cy="9" r="2" fill="none" stroke="#212121" stroke-linecap="round"/> <circle cx="19" cy="15" r="2" fill="none" stroke="#212121" stroke-linecap="round"/> </g>
+                        </svg> 
+                        <span>Filters</span>
+                      </div>
+                      <div class=''><%=helper.render('sortBy',scope,data,"productList") %></div>
+                  </div>
+                  <div class="kuResultWrap <%=(data.query.productList.filters.length == 0 )?'kuBlockFullwidth':''%>">
+                      <div ku-container data-container-id="ku_landing_main_content_container" data-container-role="content">                   
+                          <section ku-container data-container-id="ku_landing_main_content_left" data-container-position="left" data-container-role="left">
+                                  <div class='filterWrapper'>                            
+                                      <div ku-block data-block-id="ku_landing_left_facets" >
+                                          <%=helper.render('filters',scope,data,"productList") %>
+                                      </div>
+                                      <div class='filterWrapperClose'><svg xmlns="http://www.w3.org/2000/svg" width="64px" height="64px" viewBox="0 0 24 24" fill="none" stroke="#ffffff"><g id="SVGRepo_bgCarrier" stroke-width="0"/><g id="SVGRepo_tracerCarrier" stroke-linecap="round" stroke-linejoin="round"/><g id="SVGRepo_iconCarrier"> <path d="M20.7457 3.32851C20.3552 2.93798 19.722 2.93798 19.3315 3.32851L12.0371 10.6229L4.74275 3.32851C4.35223 2.93798 3.71906 2.93798 3.32854 3.32851C2.93801 3.71903 2.93801 4.3522 3.32854 4.74272L10.6229 12.0371L3.32856 19.3314C2.93803 19.722 2.93803 20.3551 3.32856 20.7457C3.71908 21.1362 4.35225 21.1362 4.74277 20.7457L12.0371 13.4513L19.3315 20.7457C19.722 21.1362 20.3552 21.1362 20.7457 20.7457C21.1362 20.3551 21.1362 19.722 20.7457 19.3315L13.4513 12.0371L20.7457 4.74272C21.1362 4.3522 21.1362 3.71903 20.7457 3.32851Z" fill="#ffffff"/> </g></svg></div>
+                                  </div>   
+                              <!-- <div ku-block data-block-id="ku_landing_left_call_outs"></div>
+                              <div ku-block data-block-id="ku_landing_left_banner"></div> -->
+                          </section>
+                          <section ku-container data-container-id="ku_landing_main_content_center" data-container-position="center" data-container-role="center">
+                              <header ku-block data-block-id="ku_landing_result_header">
+                                  <% if(helper.hasResults(data,"productList")) { %>
+                                      <%=helper.render('kuTemplateLandingResultsViewSwitch',scope,data,"productList") %>
+                                      <%=helper.render('tab-results',scope,data,"productList") %>
+                                      <div class='desktop'><%=helper.render('sortBy',scope,data,"productList") %></div>
+                                      <!-- <%=helper.render('limit',scope,data,"productList") %> -->
+                                  <% } %>
+                                  <!-- <div class="kuClearBoth"></div> -->
+                              </header>
+                              <%= helper.render('kuFilterTagsTemplate',scope,data,"productList") %> 
+                              
+                              <div ku-block data-block-id="ku_landing_result_items">
+                                  <div class="kuResults">
+                                      <% if(helper.hasResults(data,"productList")) { %>
+                                          <ul>
+                                              <% helper.each(data.query.productList.result,function(key,item){ %>
+                                                  <% if(item.typeOfRecord == "KLEVU_PRODUCT") { %>
+                                                      <%=helper.render('productBlock',scope,data,item) %>
+                                                  <% } %>
+                                              <% }); %>
+                                          </ul>
+                                      <% } else { %>
+                                          <div class="kuNoRecordsFoundLabelTextContainer">
+                                              <span class="kuNoRecordsFoundLabelText"><%= helper.translate("No records found for your selection") %></span>
+                                          </div>
+                                      <% } %>
+                                      <div class="kuClearBoth"></div>
+                                  </div>
+                                  <! -- pagination added to the bottom of the product block -- !>
+                                  <%=helper.render('pagination',scope,data,"productList") %>
+                              </div>
+
+                              <div ku-block data-block-id="ku_landing_other_items">
+                                  <%=helper.render('klevuLandingTemplateInfiniteScrollDown',scope,data) %>
+                              </div>
+                              <footer ku-block data-block-id="ku_landing_result_footer"></footer>
+                          </section>
+                          <section ku-container data-container-id="ku_landing_main_content_right" data-container-position="right" data-container-role="right">
+                              <div ku-block data-block-id="ku_landing_right_facets"></div>
+                              <div ku-block data-block-id="ku_landing_right_call_outs"></div>
+                              <div ku-block data-block-id="ku_landing_right_banner"></div>
+                          </section>
+                      </div>
+
+                  </div>
+              </div>
+          </div>
+
+          <% if(data.query.contentList) { %>
+              <div class="contentList klevuMeta" data-section="contentList" data-result-view="list">
+                  <div class="kuResultContent">
+                      <div class="kuResultWrap <%=(data.query.contentList.filters.length == 0 )?'kuBlockFullwidth':''%>">
+
+                          <div ku-container data-container-id="ku_landing_main_content_container" data-container-role="content">
+                              <section ku-container data-container-id="ku_landing_main_content_left" data-container-position="left" data-container-role="left">
+                                  <div ku-block data-block-id="ku_landing_left_facets">
+                                      <%=helper.render('filters',scope,data,"contentList") %>
+                                  </div>
+                                  <div ku-block data-block-id="ku_landing_left_call_outs"></div>
+                                  <div ku-block data-block-id="ku_landing_left_banner"></div>
+                              </section>
+                              <section ku-container data-container-id="ku_landing_main_content_center" data-container-position="center" data-container-role="center">
+
+                                  <header ku-block data-block-id="ku_landing_result_header">
+                                      <%=helper.render('filtersTop',scope,data,"contentList") %>
+                                      <%= helper.render('kuFilterTagsTemplate',scope,data,"contentList") %>
+                                      <% if(helper.hasResults(data,"contentList")) { %>
+                                          <%=helper.render('limit',scope,data,"contentList") %>
+                                          <%=helper.render('pagination',scope,data,"contentList") %>
+                                      <% } %>
+                                      <div class="kuClearBoth"></div>
+                                  </header>
+
+                                  <div ku-block data-block-id="ku_landing_result_items">
+                                      <div class="kuClearBoth"></div>
+                                      <div class="kuResults">
+                                          <% if(helper.hasResults(data,"contentList")) { %>
+                                              <ul>
+                                                  <% helper.each(data.query.contentList.result,function(key,item){ %>
+                                                      <% if(item.typeOfRecord == "KLEVU_CMS") { %>
+                                                          <%=helper.render('contentBlock',scope,data,item) %>
+                                                      <% }%>
+                                                  <% }); %>
+                                              </ul>
+                                          <% } else { %>
+                                              <div class="kuNoRecordsFoundLabelTextContainer">
+                                                  <span class="kuNoRecordsFoundLabelText"><%= helper.translate("No records found for your selection") %></span>
+                                              </div>
+                                          <% } %>
+                                          <div class="kuClearBoth"></div>
+                                      </div>
+                                      <! -- pagination added to the bottom of the content block -- !>
+
+                                      <%=helper.render('pagination',scope,data,"contentList") %>
+                                  </div>
+                                  <div ku-block data-block-id="ku_landing_other_items">
+                                      <%=helper.render('klevuLandingTemplateInfiniteScrollDown',scope,data) %>
+                                  </div>
+                                  <footer ku-block data-block-id="ku_landing_result_footer"></footer>
+                              </section>
+                              <section ku-container data-container-id="ku_landing_main_content_right" data-container-position="right" data-container-role="right">
+                                  <div ku-block data-block-id="ku_landing_right_facets"></div>
+                                  <div ku-block data-block-id="ku_landing_right_call_outs"></div>
+                                  <div ku-block data-block-id="ku_landing_right_banner"></div>
+                              </section>
+                          </div>
+
+                      </div>
+                  </div>
+              </div>
+          <% } %>
+      </div>
+  
+    </script>
+<!-- klevu search template end-->
+
+<!-- pagination url in search template start-->
+<script type="text/javascript"> 
+  klevu.modifyRequest("landing,catnav", function(data, scope){
+      // Apply the selected page value from the current URL string            
+      klevu.search.modules.addPaginationToURL.base.getAndUpdatePagination(data, scope);
+  });
+  klevu.afterTemplateRender("landing,catnav", function(data, scope){
+      // Add selected page value to the URL string
+      klevu.search.modules.addPaginationToURL.base.setPagination(data, scope);
+  
+  });
+</script>
+<script type="text/javascript">
+// addPaginationToURL module
+(function(klevu) {
+    klevu.extend(true, klevu.search.modules, {
+        addPaginationToURL: {
+            base: {
+                setPagination: function(data, scope, queryId) {
+                    var hasPaginationEnabled = klevu.getSetting(klevu, "settings.theme.modules.pagination.searchResultsPage.enable");
+                    if (hasPaginationEnabled === true) {
+                        var activeQueryId = klevu.getObjectPath(data, "context.activeQueryId");
+                        if (queryId && queryId.length) {
+                            activeQueryId = queryId;
+                        }
+                        var paginationQueryParam = activeQueryId + "PgNo";
+                        var activeQueryMeta = klevu.getObjectPath(data, "template.query." + activeQueryId + ".meta");
+                        var paginationValuesQueryParam = 0;
+                        if (activeQueryMeta) {
+                            var productListLimit = activeQueryMeta.noOfResults;
+                            paginationValuesQueryParam = Math.ceil(activeQueryMeta.offset / productListLimit) + 1;
+                        }
+                        var searchPath = window.location.search;
+                        var updatedPath = klevu.dom.helpers.updateQueryStringParameter(searchPath, paginationQueryParam, paginationValuesQueryParam);
+                        if (paginationValuesQueryParam === 0) {
+                            updatedPath = updatedPath.replace("&" + paginationQueryParam + "=", "");
+                        }
+                        if ('undefined' !== typeof window.history && 'undefined' !== typeof window.history.replaceState) {
+                            window.history.replaceState({}, "", updatedPath);
+                        } else {
+                            console.log("This browser does not have the support of window.history or window.history.replaceState");
+                        }
+                    }
+                },
+                getAndUpdatePagination: function(data, scope, queryId) {
+                    var hasAlreadyTriggered = klevu.getObjectPath(scope.kScope, "element.kScope.getAndUpdatePaginationTriggered");
+                    if (hasAlreadyTriggered === true) {
+                        return;
+                    }
+                    var matchedQueryParamId = ""
+                      , matchedQueryParamValue = "";
+                    var recordQueries = klevu.getObjectPath(data, "request.current.recordQueries");
+                    if (recordQueries && recordQueries.length) {
+                        klevu.each(recordQueries, function(key, query) {
+                            if (query.id) {
+                                var paginationFromURL = klevu.dom.helpers.getQueryStringValue(query.id + "PgNo");
+                                if (paginationFromURL && paginationFromURL.length) {
+                                    matchedQueryParamId = query.id;
+                                    matchedQueryParamValue = paginationFromURL;
+                                }
+                            }
+                        })
+                    }
+                    klevu.setObjectPath(scope.kScope, "element.kScope.getAndUpdatePaginationTriggered", true);
+                    var activeQueryId = klevu.getObjectPath(data, "context.activeQueryId");
+                    if (queryId && queryId.length) {
+                        activeQueryId = queryId;
+                    } else if (matchedQueryParamId.length && matchedQueryParamValue.length) {
+                        activeQueryId = matchedQueryParamId;
+                        var storage = klevu.getSetting(scope.kScope.settings, "settings.storage");
+                        if (storage.tabs) {
+                            storage.tabs.setStorage("local");
+                            storage.tabs.mergeFromGlobal();
+                            storage.tabs.addElement("active", activeQueryId);
+                            storage.tabs.mergeToGlobal();
+                        }
+                    }
+                    var paginationQueryParam = activeQueryId + "PgNo";
+                    var paginationFromURL = klevu.dom.helpers.getQueryStringValue(paginationQueryParam);
+                    paginationFromURL = Number(paginationFromURL);
+                    if (paginationFromURL && paginationFromURL > 1) {
+                        var recordQueries = klevu.getObjectPath(data, "request.current.recordQueries");
+                        if (recordQueries.length) {
+                            klevu.each(recordQueries, function(key, recordQuery) {
+                                if (recordQuery.id === activeQueryId) {
+                                    var limit = klevu.getObjectPath(recordQuery, "settings.limit");
+                                    limit = Number(limit);
+                                    if (limit > 0) {
+                                        var expectedOffset = (paginationFromURL - 1) * limit;
+                                        klevu.setObjectPath(data, "localOverrides.query." + activeQueryId + ".settings.offset", expectedOffset);
+                                    }
+                                }
+                            });
+                        }
+                    }
+                }
+            },
+            build: true
+        }
+    });
+}
+)(klevu);
+</script>
+<!-- pagination url in search template end-->
+
+<!-- mobile filter js start -->
+<script>
+  klevu.afterTemplateRender("landing,catnav", function(data, scope){
+    let filterBtn = document.querySelector('.filterBtn');
+    let filterWrapper = document.querySelector('.filterWrapper');
+    let filter = document.querySelector('.filterWrapper > div');
+    let filterBtnCls= document.querySelector('.filterWrapperClose');
+      
+    filterBtn.addEventListener('click',()=>{
+      filterWrapper.classList.add('mobileFilterOpen');
+      filter.style.display='block';
+    })
+      
+    filterBtnCls.addEventListener('click',(event)=>{
+      event.stopPropagation();
+      filterWrapper.classList.remove("mobileFilterOpen");
+      filter.style.display='none';
+    })
+
+  }); 
+</script>
+<script type="template/klevu" id="klevuSearchTemplatePagination">
+    <% if(data.query[dataLocal].result.length > 0 ) { %>
+        <% var productListLimit = data.query[dataLocal].meta.noOfResults; %>
+        <% var productListTotal = data.query[dataLocal].meta.totalResultsFound; %>
+        <% var currentPage = Math.ceil(data.query[dataLocal].meta.offset / productListLimit) + 1; %>
+        <div class="kuPagination">
+            <% if(currentPage > 1) { %>
+                <a target="_self" href="?productListPgNo=1">&lt;&lt;</a>&nbsp;
+                <a target="_self" href="?productListPgNo=<%=currentPage - 1%>">&lt;</a>&nbsp;
+            <% } %>
+
+            <% for(var i = 1; i <= Math.ceil(productListTotal / productListLimit); i++) { %>
+                <% if(i === currentPage) { %>
+                    <span class="kuCurrent"><%=i%></span>&nbsp;
+                <% } else { %>
+                    <a target="_self" href="?productListPgNo=<%=i%>"><%=i%></a>&nbsp;
+                <% } %>
+            <% } %>
+
+            <% if(currentPage < Math.ceil(productListTotal / productListLimit)) { %>
+                <a target="_self" href="?productListPgNo=<%=currentPage + 1%>">&gt;</a>&nbsp;
+                <a target="_self" href="?productListPgNo=<%=Math.ceil(productListTotal / productListLimit)%>">&gt;&gt;</a>
+            <% } %>
+        </div>
+    <% } %>
+</script>
+<script type="text/javascript">
+
+klevu({
+	theme: {
+      setTemplates: [
+		 {
+		  scope: "landing,catnav", 
+		  selector: "#myCustom_klevuLandingTemplateSortBy",
+		  name: "sortBy"
+		 },
+        {
+			scope: "landing", // impacted scope
+			selector: "#myCustom_searchResultProductBadge", // new markup block ID
+			name: "landingProductBadge" // template placement name
+			}
+		],
+	  setHelpers: {
+        "landing,catnav": {
+            myCustomSortBy: function(dataLocal) {
+              /* sets the selected option to the display */
+
+              var selectedText = "";
+
+              var klevuStorage = klevu.getSetting(klevu.settings, "settings.storage");
+
+              switch (klevuStorage.sort.getElement(dataLocal) == dataLocal ? "RELEVANCE" : klevuStorage.sort.getElement(dataLocal)) {
+                case "RELEVANCE":
+                    selectedText = "Best Match";
+                    break;
+                case "PRICE_ASC":
+                    selectedText = "Price: Low to high";
+                    break;
+                case "PRICE_DESC":
+                    selectedText = "Price: High to low";
+                    break;
+                case "NAME_ASC":
+                    selectedText = "Name: A to Z";
+                    break;
+                case "NAME_DESC":
+                    selectedText = "Name: Z to A";
+                    break;
+                case "NEW_ARRIVAL_DESC":
+                    selectedText = "Newest to Oldest";
+                    break;
+                case "NEW_ARRIVAL_ASC":
+                    selectedText = "Oldest to Newest";
+                    break;
+                default:
+                    selectedText = "Best Match";
+              }
+              return selectedText;
+          }
+        }
+      }
+	}
+});
+</script>
+
+
+<script type="template/klevu" id="myCustom_klevuLandingTemplateSortBy">
+  <div class="kuDropdown kuDropSortBy" role="listbox">
+    <div class="kuDropdownLabel">
+      <%=helper.translate("Sort by : ")%><%=helper.myCustomSortBy(dataLocal)%>
+    </div>
+    <div class="kuDropdownOptions">
+      <div class="kuDropOption kuSort" data-value="RELEVANCE" role="option">Best Match</div>
+      <div class="kuDropOption kuSort" data-value="PRICE_ASC" role="option">Price: Low to high</div>
+      <div class="kuDropOption kuSort" data-value="PRICE_DESC" role="option">Price: High to low</div>
+      <div class="kuDropOption kuSort" data-value="NAME_ASC" role="option">Name: A to Z</div>
+      <div class="kuDropOption kuSort" data-value="NAME_DESC" role="option">Name: Z to A</div>
+      <div class="kuDropOption kuSort" data-value="NEW_ARRIVAL_DESC" role="option">Newest to Oldest</div>
+      <div class="kuDropOption kuSort" data-value="NEW_ARRIVAL_ASC" role="option">Oldest to Newest</div>
+  </div>
+ </div>
+</script>
+
+<!-- Create a new markup block with a unique 'id' -->
+<script type="template/klevu" id="myCustom_searchResultProductBadge">
+  
+    <% if (dataLocal.Promotional_Text && dataLocal.Promotional_Text.trim() !== '') { %>
+        <div class="kuDiscountBadge">
+            <span class="kuDiscountTxt">
+                <%= dataLocal.Promotional_Text %>
+            </span>
+        </div>
+    <% } %>
+</script>
+<script>
+  klevu.modifyResponse("landing,catnav", function (data, scope) {
+klevu.each(data.template.query.productList.filters, function (indx, filter) {
+
+
+if (filter.key.toLowerCase() === 'brand') {
+/ JS sort object by 'name' value /
+filter.options.sort(function (a, b) {
+// Extract numerical parts and convert them to numbers for comparison
+const numA = a.name.toLowerCase();
+const numB = b.name.toLowerCase();
+
+
+if (numA < numB) return -1;
+if (numA > numB) return 1;
+return 0;
+});
+}
+
+
+});
+});
+</script>

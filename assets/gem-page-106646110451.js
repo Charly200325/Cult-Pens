@@ -1,0 +1,163 @@
+
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709643093660').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165200').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165158').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165204').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709643143015').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709643169337').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165237').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709643260081').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+                          (function( jQuery ){
+                              try{
+                                  if(jQuery().gfV2Lazyload){
+                                      var $module = jQuery(window);
+                                      $module.gfV2Lazyload({delay:125})
+                                  }
+                              }catch(err){
+                                  console.error(err)
+                              }
+                          })( window.GemQuery || jQuery );
+                      

@@ -1,0 +1,57 @@
+
+<div class='container pdpAllCarousel'>
+  <div class='klevuCarausels'>
+    <h2>{{ section.settings.tab-heading1 }}</h2>
+    <div class="klevu-recs" id="{{ section.settings.id1 }}"></div>
+  </div>
+  <div class='klevuCarausels'>
+    <h2>{{ section.settings.tab-heading2 }}</h2>           
+    <div class="klevu-recs" id="{{ section.settings.id2 }}"></div>
+  </div>
+  <div class='klevuCarausels'>
+    <h2>{{ section.settings.tab-heading3 }}</h2>           
+    <div class="klevu-recs" id="{{ section.settings.id3 }}"></div>
+  </div>
+</div>
+{% schema %}
+  {
+    "name": "Product All Carousels",
+    "settings": [
+      {
+        "type": "text",
+        "id": "tab-heading1",
+        "label": "Carousel-1 Title"
+      },
+      {
+        "type": "text",
+        "id": "id1",
+        "label": "Klevu ID"
+      },
+      {
+        "type": "text",
+        "id": "tab-heading2",
+        "label": "Carousel-2 Title"
+      },
+      {
+        "type": "text",
+        "id": "id2",
+        "label": "Klevu ID"
+      },
+      {
+        "type": "text",
+        "id": "tab-heading3",
+        "label": "Carousel-3 Title"
+      },
+      {
+        "type": "text",
+        "id": "id3",
+        "label": "Klevu ID"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Product All Carousels"
+      }
+    ]
+  }
+{% endschema %}

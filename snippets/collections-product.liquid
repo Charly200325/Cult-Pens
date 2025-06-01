@@ -1,0 +1,53 @@
+<div class="subcollection row carousel owl-carousel page-width">
+  {% assign subcollection = product.metafields.custom.collection.value %}
+  {% for subcollection in product.metafields.custom.collection.value %}
+    <div class="subcollectionitem product-block__title-price product-block collection">
+      <a href="{{ subcollection.url }}" target="_blank">
+        <img src="{{ subcollection.featured_image | img_url: '400x' }}" class="image">
+        <div>
+          <p class="title">{{ subcollection.title }}</p>
+        </div>
+      </a>
+    </div>
+  {% endfor %}
+  {%- if product.metafields.custom.products.value != blank -%}
+    {% assign productprod = product.metafields.custom.products.value %}
+    {% for productprod in product.metafields.custom.products.value %}
+      <div class="subcollectionitem product product-block">
+        <a href="{{ productprod.url }}" target="_blank">
+          <img src="{{ productprod.featured_image | img_url: '400x' }}" class="image">
+          <div class="product-block__title-price">
+            <p class="title">{{ productprod.title }}</p>
+            <p class="price ">
+              <span class="amount theme-money ">{{ productprod.price | money }}</span>
+            </p>
+          </div>
+        </a>
+      </div>
+    {% endfor %}
+  {%- endif -%}
+</div>
+
+<script>
+  $('.carousel').owlCarousel({
+    loop: false,
+    autoplay: false,
+    autoscroll: false,
+    autoplayTimeout: 4000,
+    autoplayHoverPause: true,
+    dots: false,
+    margin: 10,
+    nav: true,
+    responsive: {
+      0: {
+        items: 2,
+      },
+      900: {
+        items: 3,
+      },
+      1025: {
+        items: 4,
+      },
+    },
+  });
+</script>

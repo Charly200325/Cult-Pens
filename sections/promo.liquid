@@ -1,0 +1,52 @@
+  {% if section.settings.promo == "" %}
+    <!-- no promo -->
+  {% else %}
+    <style>
+      .collection-promo-container {
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .collection-promo-block {
+        background: #118c2f;
+        width: 80%;
+        margin-left: auto;
+        margin-right: auto;
+        padding-top: 10px;
+        padding-bottom: 2px;
+        border-radius: 15px;
+      }
+      .collection-promo-block p {
+        color: #fff;
+        font-size: 120%;
+        text-align: center;
+        text-align: middle;
+      }
+      .collection-promo-block p a {
+        color: #fff;
+        text-decoration: underline;
+      }
+    </style>
+    <div class="collection-promo-container">
+      <div class="collection-promo-block">
+        {{ section.settings.promo }}
+      </div>
+    </div>
+  {% endif %}
+
+{% schema %}
+  {
+    "name": "Promo",
+    "settings": [
+      {
+        "type": "richtext",
+        "label": "Promo",
+        "id": "promo"
+      }
+    ],
+    "presets": [
+      {
+      "name": "Promo"
+      }
+    ]
+  }
+{% endschema %}

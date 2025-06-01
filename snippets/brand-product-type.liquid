@@ -1,0 +1,19 @@
+<div>
+  {%- liquid
+    assign product_vendor_handle = product.vendor | handle
+    if collections[product_vendor_handle].handle == product_vendor_handle
+      assign vendor_url = collections[product_vendor_handle].url
+    else
+      assign vendor_url = product.vendor | url_for_vendor
+    endif
+  -%}
+  <span class="brand">{{ product.vendor | link_to: vendor_url }}</span>
+  {%- assign product_type_handle = product.type | handle -%}
+  {%- if collections[product_type_handle].handle == product_type_handle -%}
+    {%- assign type_url = collections[product_type_handle].url -%}
+  {%- else -%}
+    {%- assign type_url = product.type | url_for_type -%}
+  {%- endif -%}
+  <span style="color:#e9a63a;">&nbsp;/</span>
+  <span class="type">{{ product.type | link_to: type_url }}</span>
+</div>

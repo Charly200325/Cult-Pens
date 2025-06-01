@@ -1,0 +1,1279 @@
+/*
+ * ------------------------------------------------------------
+ * IMPORTANT: The contents of this file are auto-generated.
+ *
+ * This file may be updated by the Shopify admin theme editor
+ * or related systems. Please exercise caution as any changes
+ * made to this file may be overwritten.
+ * ------------------------------------------------------------
+ */
+{
+  "sections": {
+    "3721924b-630b-4a60-b724-521fef7aa78e": {
+      "type": "icons-with-text",
+      "blocks": {
+        "template--16154615972040__3721924b-630b-4a60-b724-521fef7aa78e-item-1": {
+          "type": "item",
+          "settings": {
+            "icon": "email",
+            "use_custom_icon_color": false,
+            "icon_color": "#f5a201",
+            "heading": "Penorama Newsletter",
+            "text": "<p>Sign up for updates!</p>",
+            "link": "shopify://pages/penorama-the-cult-pens-newsletter"
+          }
+        },
+        "template--16154615972040__3721924b-630b-4a60-b724-521fef7aa78e-item-2": {
+          "type": "item",
+          "settings": {
+            "icon": "truck",
+            "use_custom_icon_color": false,
+            "icon_color": "#000000",
+            "heading": "Same Day Dispatch",
+            "text": "<p>on most orders before 3pm</p>",
+            "link": "shopify://pages/delivery"
+          }
+        },
+        "template--16154615972040__3721924b-630b-4a60-b724-521fef7aa78e-item-3": {
+          "type": "item",
+          "settings": {
+            "icon": "award",
+            "use_custom_icon_color": false,
+            "icon_color": "#000000",
+            "heading": "World's Best Range",
+            "text": "<p>30,000 items and growing!</p>",
+            "link": "shopify://collections/all-brands"
+          }
+        },
+        "item_BF9fk4": {
+          "type": "item",
+          "settings": {
+            "icon": "heart",
+            "use_custom_icon_color": false,
+            "icon_color": "#000000",
+            "heading": "Passionate about Pens",
+            "text": "<p>expert knowledge, top service</p>",
+            "link": "shopify://pages/pencyclopedia"
+          }
+        }
+      },
+      "block_order": [
+        "template--16154615972040__3721924b-630b-4a60-b724-521fef7aa78e-item-1",
+        "template--16154615972040__3721924b-630b-4a60-b724-521fef7aa78e-item-2",
+        "template--16154615972040__3721924b-630b-4a60-b724-521fef7aa78e-item-3",
+        "item_BF9fk4"
+      ],
+      "settings": {
+        "heading": "",
+        "heading_align": "text-start",
+        "icon_size": 36,
+        "title_type_scale": "small",
+        "text_type_scale": "small",
+        "icon_position": "beside",
+        "mobile_stack": false,
+        "section_height": "small",
+        "color_scheme": "1",
+        "full_width": true,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "slideshow": {
+      "type": "slideshow",
+      "blocks": {
+        "slide-1": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/20-bday-3200x950-05.jpg",
+            "image_mobile": "shopify://shop_images/cp-2025-birthday-sq-canopy6.jpg",
+            "url": "shopify://collections/20th-birthday-code-collection",
+            "overlay_position": "justify-end items-end",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "countdown_border_radius": 6,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "count_border_color": "",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "a27f0a3c-58d4-4323-8b2a-1baa1d38d3dc": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/montblanc-3200x950.jpg",
+            "image_mobile": "shopify://shop_images/montblanc-500x500.jpg",
+            "url": "shopify://collections/montblanc-meisterstuck",
+            "overlay_position": "justify-end items-end",
+            "overlay_text_align": "text-center",
+            "mob_center_text": true,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--secondary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "countdown_border_radius": 6,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "count_border_color": "",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        },
+        "541991cb-7ff1-4d51-86bb-b59747bc29bb": {
+          "type": "slide",
+          "settings": {
+            "image_desktop": "shopify://shop_images/gvfc-3200x950.jpg",
+            "image_mobile": "shopify://shop_images/gvfc-sq-02.jpg",
+            "url": "shopify://collections/graf-von-faber-castell",
+            "overlay_position": "justify-end items-end",
+            "overlay_text_align": "text-center",
+            "mob_center_text": false,
+            "subheading": "",
+            "heading": "",
+            "heading_size": "h0",
+            "heading_h1": false,
+            "text": "",
+            "enlarge_text": true,
+            "button_1_label": "",
+            "button_1_link": "",
+            "button_1_style": "btn btn--primary",
+            "button_2_label": "",
+            "button_2_link": "",
+            "button_2_style": "btn btn--secondary",
+            "transparent_content_color": "#ffffff",
+            "countdown_show": false,
+            "countdown_end_date": "",
+            "countdown_end_time": "",
+            "countdown_end_text": "",
+            "enlarge_end_text": false,
+            "countdown_hide_on_end": false,
+            "countdown_border_radius": 6,
+            "use_custom_colors": false,
+            "count_color": "#ffffff",
+            "count_border_color": "",
+            "bg_color": "#070707",
+            "bg_grad": ""
+          }
+        }
+      },
+      "block_order": [
+        "slide-1",
+        "a27f0a3c-58d4-4323-8b2a-1baa1d38d3dc",
+        "541991cb-7ff1-4d51-86bb-b59747bc29bb"
+      ],
+      "settings": {
+        "height_mode": "auto",
+        "fixed_height_desktop": 480,
+        "fixed_height_mobile": 360,
+        "mobile_stacked": false,
+        "nav_style": "slideshow_nav_dots",
+        "pagination_color": "#ffffff",
+        "nav_position": "justify-center",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": true,
+        "autoplay_speed": 8,
+        "color_scheme": "white",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 0,
+        "accessibility_info": "",
+        "prevent_animation": true
+      }
+    },
+    "two_columns_Mqc3P8": {
+      "type": "two-columns",
+      "disabled": true,
+      "settings": {
+        "left-img": "shopify://shop_images/posca-342-square.jpg",
+        "left-link": "",
+        "left-title": "",
+        "left-text": "<p>Get <a href=\"/collections/3-for-2-on-uni-posca-markers\" title=\"3 for 2 on Uni POSCA markers\">3-for-2 on Uni POSCA Markers</a></p>",
+        "right-img": "shopify://shop_images/LG00210_Legami-Set-Of-2-Easter-Erasable-Pens-Hoppy-Easter-4.jpg",
+        "right-link": "",
+        "right-title": "",
+        "right-text": "<p>Easter is nearly here! <a href=\"/collections/legami-erasable-gel-pens\" title=\"Legami Erasable Gel Pens\">Hop to it!</a></p>"
+      }
+    },
+    "promo_grid_DMUYkR": {
+      "type": "promo-grid",
+      "blocks": {
+        "media_KCEa6e": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/twsbi-matcha-green-sq_198c0767-7eb2-4c68-bc50-e1c5acbe9ccb.jpg",
+            "link_url": "shopify://products/twsbi-eco-fountain-pen-matcha-green",
+            "columns": 1,
+            "rows": 1,
+            "line1_text": "",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "",
+            "line2_text_type_scale": "text-h3",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h6",
+            "overlay_position": "justify-end items-start",
+            "text_alignment": "text-center",
+            "promo_circle": false,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Out Now",
+            "link_text": "",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_i6jxXb": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/retro-51-war-ani.gif",
+            "link_url": "shopify://collections/retro-51-war-of-the-roses",
+            "columns": 1,
+            "rows": 1,
+            "line1_text": "",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "",
+            "line2_text_type_scale": "text-h4",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h3",
+            "overlay_position": "justify-start items-start",
+            "text_alignment": "text-center",
+            "promo_circle": true,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Shop Now",
+            "link_text": "",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_74eVdC": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/ikkaku-sq.jpg",
+            "link_url": "shopify://collections/ikkaku-by-nahvalur",
+            "columns": 1,
+            "rows": 1,
+            "line1_text": "",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "",
+            "line2_text_type_scale": "text-h3",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h6",
+            "overlay_position": "justify-start items-start",
+            "text_alignment": "text-center",
+            "promo_circle": false,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Shop Now",
+            "link_text": "",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        },
+        "media_6aK7KR": {
+          "type": "media",
+          "settings": {
+            "image": "shopify://shop_images/cult-pens-art-pads-sq.jpg",
+            "link_url": "shopify://collections/cult-pens-art-pads",
+            "columns": 1,
+            "rows": 1,
+            "line1_text": "",
+            "line1_text_type_scale": "text-h6",
+            "line2_text": "",
+            "line2_text_type_scale": "text-h4",
+            "line3_text": "",
+            "line3_text_type_scale": "text-h6",
+            "overlay_position": "justify-start items-start",
+            "text_alignment": "text-center",
+            "promo_circle": false,
+            "background_color": "#e32b2b",
+            "text_color": "#ffffff",
+            "subheading": "Shop Now",
+            "link_text": "",
+            "text_type_scale": "h6",
+            "tint_color": "#000000",
+            "tint_opacity": 0
+          }
+        }
+      },
+      "block_order": [
+        "media_KCEa6e",
+        "media_i6jxXb",
+        "media_74eVdC",
+        "media_6aK7KR"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "gallery_cols_max": 4,
+        "mobile_carousel": false,
+        "gallery_cols_min": "1",
+        "fixed_height_desktop": 180,
+        "fixed_height_mobile": 350,
+        "text_overlay_spacing": false,
+        "text_overlay_font": "heading",
+        "color_scheme": "default",
+        "overlay_border_radius": 4
+      }
+    },
+    "four_columns_kFYX3R": {
+      "type": "four-columns",
+      "settings": {
+        "one-img": "shopify://shop_images/twsbi-matcha-green-sq_198c0767-7eb2-4c68-bc50-e1c5acbe9ccb.jpg",
+        "one-link": "shopify://products/twsbi-eco-fountain-pen-matcha-green",
+        "one-title": "TWSBI Eco Matcha Green",
+        "one-text": "",
+        "two-img": "shopify://shop_images/retro-51-war-ani.gif",
+        "two-link": "shopify://collections/retro-51-war-of-the-roses",
+        "two-title": "Retro 51 War of the Roses",
+        "two-text": "",
+        "three-img": "shopify://shop_images/ikkaku-sq_28678840-df9f-4e42-97cb-8e31480a78bf.jpg",
+        "three-link": "shopify://collections/ikkaku-by-nahvalur",
+        "three-title": "IKKAKU by Nalvalur",
+        "three-text": "",
+        "four-img": "shopify://shop_images/cult-pens-art-pads-sq_61d354c9-e139-4b08-9822-5842f1b9b097.jpg",
+        "four-link": "shopify://collections/cult-pens-art-pads",
+        "four-title": "Cult Pens Art Pads",
+        "four-text": ""
+      }
+    },
+    "countdown_timer_GUE8qp": {
+      "type": "countdown-timer",
+      "blocks": {
+        "heading_ahnqpH": {
+          "type": "heading",
+          "settings": {
+            "heading": "National Pencil Day Mystery Box",
+            "heading_size": "h2",
+            "heading_h1": false
+          }
+        },
+        "text_ib6Gfg": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Launches in...</p>",
+            "enlarge_text": true
+          }
+        },
+        "countdown_tg3g8T": {
+          "type": "countdown",
+          "settings": {
+            "end_date": "2025-03-25",
+            "end_time": "16:00",
+            "end_text": "",
+            "enlarge_end_text": false,
+            "hide_on_end": true
+          }
+        }
+      },
+      "block_order": [
+        "heading_ahnqpH",
+        "text_ib6Gfg",
+        "countdown_tg3g8T"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/pencil-mystery-bundle-2025.jpg",
+        "height_mode": "fixed",
+        "fixed_height_desktop": 600,
+        "fixed_height_mobile": 350,
+        "overlay_position": "justify-center items-center",
+        "text_align": "text-center",
+        "mob_center_text": false,
+        "countdown_size": "21",
+        "countdown_border_radius": 4,
+        "use_custom_colors": false,
+        "count_color": "#ffffff",
+        "count_border_color": "",
+        "bg_color": "#070707",
+        "bg_grad": "",
+        "color_scheme": "1",
+        "full_width": true,
+        "tint_color": "#000000",
+        "tint_opacity": 20
+      }
+    },
+    "featured_product_eK7Bai": {
+      "type": "featured-product",
+      "blocks": {
+        "vendor_sku_VN4MTM": {
+          "type": "vendor-sku",
+          "settings": {
+            "show_vendor": true,
+            "show_sku": true,
+            "show_barcode": false
+          }
+        },
+        "title_pjyq84": {
+          "type": "title",
+          "settings": {
+            "show_weight": false
+          }
+        },
+        "product_labels_fjcYgT": {
+          "type": "product-labels",
+          "settings": {}
+        },
+        "price_pGc7Wx": {
+          "type": "price",
+          "settings": {
+            "show_tax_and_shipping": true
+          }
+        },
+        "view_more_button_KEtTMg": {
+          "type": "view-more-button",
+          "settings": {
+            "button_label": "Full details",
+            "text_align": "text-start"
+          }
+        },
+        "divider_HaDpQN": {
+          "type": "divider",
+          "settings": {
+            "show_line": true
+          }
+        },
+        "variant_picker_fibQ4F": {
+          "type": "variant-picker",
+          "settings": {
+            "selector_style": "buttons",
+            "enable_dynamic_availability": true,
+            "dynamic_availability_downwards": true,
+            "show_backorder_text": true,
+            "enable_size_chart": false,
+            "size_chart_variant": "Size",
+            "size_chart_page": ""
+          }
+        },
+        "buy_buttons_zdeBfb": {
+          "type": "buy-buttons",
+          "settings": {
+            "show_qty_selector": true,
+            "enable_dynamic_checkout": true,
+            "show_gift_card_recipient": false
+          }
+        },
+        "divider_FMNgV7": {
+          "type": "divider",
+          "settings": {
+            "show_line": true
+          }
+        },
+        "share_xwdrDr": {
+          "type": "share",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "vendor_sku_VN4MTM",
+        "title_pjyq84",
+        "product_labels_fjcYgT",
+        "price_pGc7Wx",
+        "view_more_button_KEtTMg",
+        "divider_HaDpQN",
+        "variant_picker_fibQ4F",
+        "buy_buttons_zdeBfb",
+        "divider_FMNgV7",
+        "share_xwdrDr"
+      ],
+      "disabled": true,
+      "settings": {
+        "product": "cult-pens-national-pencil-day-2025-mystery-bundle",
+        "media_ratio": "natural",
+        "media_crop": "none",
+        "enable_video_looping": true,
+        "enable_zoom": true,
+        "zoom_mode": "click",
+        "hover_zoom": "large",
+        "media_width": 50,
+        "color_scheme": "none",
+        "border_color": "rgba(0,0,0,0)",
+        "bg_color": "#f4f4f4"
+      }
+    },
+    "media_with_text_YBUWCW": {
+      "type": "media-with-text",
+      "blocks": {
+        "heading_CVe7wb": {
+          "type": "heading",
+          "settings": {
+            "heading": "The World's Best Selection Of Pens...",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_Dc3DR7": {
+          "type": "text",
+          "settings": {
+            "text": "<p>... pencils, notebooks and lots of other stationery bits and pieces... probably! We're the experts on everything that makes a mark, and all the things that go with them. We pride ourselves on a high standard of customer service - we're friendly and cheerful and no question is too strange.</p><p>Cult Pens... feeding stationery fixations since 2005</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_RxiM4L": {
+          "type": "button",
+          "settings": {
+            "button_label": "Shop Winter Sale Now",
+            "button_link": "shopify://collections/winter-sale-2024",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_CVe7wb",
+        "text_Dc3DR7",
+        "button_RxiM4L"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/winter-sale-static-sq.jpg",
+        "video_external": "",
+        "video_description": "",
+        "video_autoplay": false,
+        "layout": "right",
+        "image_fit": "contain",
+        "media_width": 60,
+        "media_scale": 100,
+        "text_align": "text-center",
+        "color_scheme": "1",
+        "only_content_color_scheme": true
+      }
+    },
+    "rich_text_HULyzR": {
+      "type": "rich-text",
+      "blocks": {
+        "subheading_dNzhdw": {
+          "type": "subheading",
+          "settings": {
+            "text": "Cult Pens"
+          }
+        },
+        "heading_R3a3CA": {
+          "type": "heading",
+          "settings": {
+            "heading": "The World's Best Selection Of Pens...",
+            "heading_size": "h3",
+            "heading_h1": false
+          }
+        },
+        "text_URQcjT": {
+          "type": "text",
+          "settings": {
+            "text": "<p>... pencils, notebooks and lots of other stationery bits and pieces... probably! We're the experts on everything that makes a mark, and all the things that go with them. We pride ourselves on a high standard of customer service - we're friendly and cheerful and no question is too strange.<br/>Cult Pens - feeding stationery fixations since 2005.</p>",
+            "enlarge_text": false
+          }
+        },
+        "button_xzKF6F": {
+          "type": "button",
+          "disabled": true,
+          "settings": {
+            "button_1_label": "Optional button",
+            "button_1_link": "",
+            "button_1_style": "btn--primary",
+            "button_2_label": "Optional button",
+            "button_2_link": "",
+            "button_2_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "subheading_dNzhdw",
+        "heading_R3a3CA",
+        "text_URQcjT",
+        "button_xzKF6F"
+      ],
+      "disabled": true,
+      "settings": {
+        "text_position": "justify-center",
+        "text_align": "text-center",
+        "mob_center_text": true,
+        "color_scheme": "none",
+        "full_width": true,
+        "prevent_animation": false
+      }
+    },
+    "link_lists_gP8pzV": {
+      "type": "link-lists",
+      "blocks": {
+        "column_gM8DaY": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/stocking-fillers-sq-2.jpg",
+            "heading": "Christmas",
+            "heading_bg_color": "#ebebeb",
+            "heading_text_color": "#222222",
+            "menu": "ll-christmas",
+            "button_label": "Christmas Shop",
+            "button_link": "shopify://collections/christmas"
+          }
+        },
+        "column_8kchcV": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/Pelikan-Pura.jpg",
+            "heading": "Discounts",
+            "heading_bg_color": "#ebebeb",
+            "heading_text_color": "#222222",
+            "menu": "ll-percent-discounts",
+            "button_label": "All Offers",
+            "button_link": "shopify://collections/special-offers"
+          }
+        },
+        "column_tkLxFt": {
+          "type": "column",
+          "settings": {
+            "image": "shopify://shop_images/esterbrook-jurassic.jpg",
+            "heading": "New In!",
+            "heading_bg_color": "#ebebeb",
+            "heading_text_color": "#222222",
+            "menu": "ll-new",
+            "button_label": "All New",
+            "button_link": "shopify://collections/whats-new"
+          }
+        },
+        "column_Vke9mR": {
+          "type": "column",
+          "settings": {
+            "heading": "Column",
+            "heading_bg_color": "#ebebeb",
+            "heading_text_color": "#222222",
+            "menu": "",
+            "button_label": "Optional button",
+            "button_link": "/"
+          }
+        }
+      },
+      "block_order": [
+        "column_gM8DaY",
+        "column_8kchcV",
+        "column_tkLxFt",
+        "column_Vke9mR"
+      ],
+      "disabled": true,
+      "settings": {
+        "title": "Browse",
+        "heading_align": "text-start",
+        "button_label": "",
+        "button_link": "",
+        "layout": "carousel",
+        "column_size": "small",
+        "column_align": "center",
+        "color_scheme": "none",
+        "image_ratio": "1",
+        "button_style": "btn--primary"
+      }
+    },
+    "custom_liquid_izfMty": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<div class=\"homeRecent\">\n<h2 style=\"text-transform:capitalize;\">Recently Viewed</h2>\n<div class=\"klevu-recs\" id=\"k-64a53312-6b13-4b38-8027-459e036970d3\"></div>\n</div>",
+        "section_height": "default",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "shoppable_image_hj3QLH": {
+      "type": "shoppable-image",
+      "blocks": {
+        "hotspot_tQbBpV": {
+          "type": "hotspot",
+          "settings": {
+            "product": "cult-pens-stacking-ink-bottle",
+            "hotspot_x": 45,
+            "hotspot_y": 68
+          }
+        },
+        "hotspot_LMiiXr": {
+          "type": "hotspot",
+          "settings": {
+            "product": "endless-alchemy-fountain-pen-ink-45ml",
+            "hotspot_x": 70,
+            "hotspot_y": 36
+          }
+        },
+        "hotspot_myACNQ": {
+          "type": "hotspot",
+          "settings": {
+            "product": "toyo-steel-trunk-shape-toolbox-t-190",
+            "hotspot_x": 78,
+            "hotspot_y": 72
+          }
+        },
+        "hotspot_7dk8p6": {
+          "type": "hotspot",
+          "settings": {
+            "product": "3-oysters-hmje-18ml-ink-bottle",
+            "hotspot_x": 13,
+            "hotspot_y": 27
+          }
+        }
+      },
+      "block_order": [
+        "hotspot_tQbBpV",
+        "hotspot_LMiiXr",
+        "hotspot_myACNQ",
+        "hotspot_7dk8p6"
+      ],
+      "disabled": true,
+      "settings": {
+        "image": "shopify://shop_images/christmas-tile-04.jpg",
+        "show_vendor": false,
+        "show_content": true,
+        "mob_center_text": false,
+        "heading": "Christmas is Coming",
+        "text": "<p>It snowed in our office!</p>",
+        "button_label": "Christmas Shop",
+        "button_link": "shopify://collections/christmas",
+        "hotspot_color": "#222222",
+        "color_scheme": "1",
+        "button_style": "btn btn--primary"
+      }
+    },
+    "collection-list": {
+      "type": "collection-list",
+      "blocks": {
+        "collection-0": {
+          "type": "collection",
+          "settings": {
+            "collection": "lamy",
+            "image": "shopify://shop_images/lamy-logo-hp.jpg"
+          }
+        },
+        "collection-1": {
+          "type": "collection",
+          "settings": {
+            "collection": "kaweco",
+            "image": "shopify://shop_images/kaweco-logo-hp.jpg"
+          }
+        },
+        "collection-2": {
+          "type": "collection",
+          "settings": {
+            "collection": "copic",
+            "image": "shopify://shop_images/copic-circle.jpg"
+          }
+        },
+        "collection-3": {
+          "type": "collection",
+          "settings": {
+            "collection": "all-pelikan",
+            "image": "shopify://shop_images/pelikan_f10f7111-acab-4371-93e9-139def1db5fe.jpg"
+          }
+        },
+        "collection-6": {
+          "type": "collection",
+          "settings": {
+            "collection": "uni-posca-markers",
+            "image": "shopify://shop_images/posca.jpg"
+          }
+        },
+        "6293ae32-73a5-444b-9594-15fb43c8eefe": {
+          "type": "collection",
+          "settings": {
+            "collection": "faber-castell",
+            "image": "shopify://shop_images/faber-castell-logo-hp.jpg"
+          }
+        },
+        "collection_zbJXwV": {
+          "type": "collection",
+          "settings": {
+            "collection": "sailor",
+            "image": "shopify://shop_images/sailor_96883cc3-dc1a-4c9c-bcb8-3838739ac0ac.jpg"
+          }
+        },
+        "collection_GkRDxG": {
+          "type": "collection",
+          "settings": {
+            "collection": "montblanc",
+            "image": "shopify://shop_images/montblanc_671267f8-0098-4209-aa52-3499f0ee32d2.jpg"
+          }
+        },
+        "collection_HTmywL": {
+          "type": "collection",
+          "settings": {
+            "collection": "pilot",
+            "image": "shopify://shop_images/pilot-pens.jpg"
+          }
+        },
+        "collection_LfCCn8": {
+          "type": "collection",
+          "settings": {
+            "collection": "caran-dache",
+            "image": "shopify://shop_images/cda-circle.jpg"
+          }
+        },
+        "collection_pAKCHH": {
+          "type": "collection",
+          "settings": {
+            "collection": "parker",
+            "image": "shopify://shop_images/parker-circle.jpg"
+          }
+        },
+        "collection_ndTBGd": {
+          "type": "collection",
+          "settings": {
+            "collection": "diamine",
+            "image": "shopify://shop_images/diamine_1f9b6274-5272-4945-91d4-2d16851c4a46.jpg"
+          }
+        },
+        "collection_DgdeQj": {
+          "type": "collection",
+          "settings": {
+            "collection": "platinum",
+            "image": "shopify://shop_images/platinum-circle.jpg"
+          }
+        },
+        "collection_zjp8qb": {
+          "type": "collection",
+          "settings": {
+            "collection": "retro-51",
+            "image": "shopify://shop_images/retro51.jpg"
+          }
+        },
+        "collection_VbMxAY": {
+          "type": "collection",
+          "settings": {
+            "collection": "derwent",
+            "image": "shopify://shop_images/derwent-circle.jpg"
+          }
+        },
+        "collection_bXnJXg": {
+          "type": "collection",
+          "settings": {
+            "collection": "troika",
+            "image": "shopify://shop_images/troika-logo-bubble.jpg"
+          }
+        },
+        "collection_VtxJdp": {
+          "type": "collection",
+          "settings": {
+            "collection": "nahvalur",
+            "image": "shopify://shop_images/nahvalur-logo.jpg"
+          }
+        },
+        "collection_E6jwHP": {
+          "type": "collection",
+          "settings": {
+            "collection": "cross",
+            "image": "shopify://shop_images/cross-logo-circle.jpg"
+          }
+        },
+        "collection_jbfAtD": {
+          "type": "collection",
+          "settings": {
+            "collection": "otto-hutt",
+            "image": "shopify://shop_images/otto-hutt.jpg"
+          }
+        },
+        "collection_MnetyF": {
+          "type": "collection",
+          "settings": {
+            "collection": "omas",
+            "image": "shopify://shop_images/omas-logo_e3bba851-d5ee-4a38-9de7-9183b08932bb.jpg"
+          }
+        },
+        "collection_TdrqrN": {
+          "type": "collection",
+          "settings": {
+            "collection": "staedtler",
+            "image": "shopify://shop_images/staedtler_a209fca9-89cf-442b-9eea-9e9c4fe836ea.jpg"
+          }
+        },
+        "collection_UwFhHh": {
+          "type": "collection",
+          "settings": {
+            "collection": "tombow",
+            "image": "shopify://shop_images/tombow-bubble.jpg"
+          }
+        },
+        "collection_Vy3TAm": {
+          "type": "collection",
+          "settings": {
+            "collection": "rhodia",
+            "image": "shopify://shop_images/rhodia_5875b9d2-588b-4b95-8a26-cdb06034f4d0.jpg"
+          }
+        },
+        "collection_X9f4qX": {
+          "type": "collection",
+          "settings": {
+            "collection": "pentel",
+            "image": "shopify://shop_images/pentel_c0a30032-8d09-4b46-a269-2aa36119c228.jpg"
+          }
+        }
+      },
+      "block_order": [
+        "collection-0",
+        "collection-1",
+        "collection-2",
+        "collection-3",
+        "collection-6",
+        "6293ae32-73a5-444b-9594-15fb43c8eefe",
+        "collection_zbJXwV",
+        "collection_GkRDxG",
+        "collection_HTmywL",
+        "collection_LfCCn8",
+        "collection_pAKCHH",
+        "collection_ndTBGd",
+        "collection_DgdeQj",
+        "collection_zjp8qb",
+        "collection_VbMxAY",
+        "collection_bXnJXg",
+        "collection_VtxJdp",
+        "collection_E6jwHP",
+        "collection_jbfAtD",
+        "collection_MnetyF",
+        "collection_TdrqrN",
+        "collection_UwFhHh",
+        "collection_Vy3TAm",
+        "collection_X9f4qX"
+      ],
+      "custom_css": [],
+      "settings": {
+        "title": "Top Brands",
+        "heading_align": "text-center",
+        "button_label": "View all",
+        "button_link": "shopify://collections/all-brands",
+        "layout": "grid",
+        "card_size": "small",
+        "use_product_image": false,
+        "circle_image": false,
+        "show_border": false,
+        "color_scheme": "1",
+        "full_width": true
+      }
+    },
+    "featured-collection": {
+      "type": "featured-collection",
+      "disabled": true,
+      "settings": {
+        "title": "What's New",
+        "heading_align": "text-center",
+        "show_view_all": true,
+        "collection": "whats-new",
+        "layout": "carousel",
+        "card_size_mobile": "small",
+        "card_size": "small",
+        "products_to_show": 12,
+        "color_scheme": "none",
+        "card_contain": true,
+        "full_width": true
+      }
+    },
+    "custom_liquid_mtPQ3r": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h3>WHAT'S NEW</h3>",
+        "section_height": "xsmall",
+        "full_width": false,
+        "dividers": "border-top",
+        "prevent_animation": false
+      }
+    },
+    "174471016778856dee": {
+      "type": "apps",
+      "blocks": {
+        "klevu_ai_search_filter_recommendations_banner_Je48BM": {
+          "type": "shopify://apps/klevu-ai-search-filter/blocks/recommendations-banner/3fd783f0-6a26-4856-8c5b-59083a014991",
+          "settings": {
+            "banner_id": "k-31762be4-d2cc-4d22-8e8b-d508bd2099d2"
+          }
+        }
+      },
+      "block_order": [
+        "klevu_ai_search_filter_recommendations_banner_Je48BM"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "custom_liquid_346qad": {
+      "type": "custom-liquid",
+      "settings": {
+        "custom_liquid": "<h3>TRENDING PRODUCTS</h3>",
+        "section_height": "tight",
+        "full_width": false,
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "1744710080746e86de": {
+      "type": "apps",
+      "blocks": {
+        "klevu_ai_search_filter_recommendations_banner_Bc9LWx": {
+          "type": "shopify://apps/klevu-ai-search-filter/blocks/recommendations-banner/3fd783f0-6a26-4856-8c5b-59083a014991",
+          "settings": {
+            "banner_id": "k-a60834b5-f1b7-4df2-a3e4-911a50913bfa"
+          }
+        }
+      },
+      "block_order": [
+        "klevu_ai_search_filter_recommendations_banner_Bc9LWx"
+      ],
+      "settings": {
+        "full_width": false
+      }
+    },
+    "background_video_N97WRE": {
+      "type": "background-video",
+      "blocks": {
+        "heading_BJAmCY": {
+          "type": "heading",
+          "settings": {
+            "heading": "Cult Pens",
+            "heading_size": "h1",
+            "heading_h1": false
+          }
+        },
+        "text_8KQaUW": {
+          "type": "text",
+          "settings": {
+            "text": "<p>We won't let you down.</p>",
+            "enlarge_text": true
+          }
+        },
+        "button_3AYzFx": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional Button",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "heading_BJAmCY",
+        "text_8KQaUW",
+        "button_3AYzFx"
+      ],
+      "disabled": true,
+      "settings": {
+        "video_external": "https://youtu.be/dQw4w9WgXcQ",
+        "video_description": "",
+        "video_height": "md",
+        "overlay_text_align": "text-center",
+        "overlay_position": "justify-center items-center",
+        "mob_center_text": true,
+        "color_scheme": "white",
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 40,
+        "tint_gradient": "",
+        "lazyload": true,
+        "prevent_animation": false
+      }
+    },
+    "testimonials_JERNA6": {
+      "type": "testimonials",
+      "blocks": {
+        "testimonial_7McUUW": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Author information",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "testimonial_3eypfh": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Author information",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        },
+        "testimonial_TCn6Rg": {
+          "type": "testimonial",
+          "settings": {
+            "testimonial": "<p>Add customer reviews and testimonials to showcase your store's happy customers.</p>",
+            "author": "Author's name",
+            "author_info": "Author information",
+            "show_star_rating": true,
+            "star_rating": 5
+          }
+        }
+      },
+      "block_order": [
+        "testimonial_7McUUW",
+        "testimonial_3eypfh",
+        "testimonial_TCn6Rg"
+      ],
+      "disabled": true,
+      "settings": {
+        "heading": "Testimonials",
+        "show_quotes": false,
+        "testimonial_size": "h3",
+        "testimonial_font": "heading",
+        "text_position": "justify-center",
+        "text_align": "text-center justify-center",
+        "nav_style": "slideshow_nav_dots",
+        "transition": "slide-fade",
+        "autoplay": true,
+        "slider_pause": false,
+        "autoplay_speed": 5,
+        "color_scheme": "1",
+        "star_color": "#f7c346",
+        "full_width": true
+      }
+    },
+    "scrolling_banner_TMrgrE": {
+      "type": "scrolling-banner",
+      "blocks": {
+        "text_nTjbxA": {
+          "type": "text",
+          "settings": {
+            "text": "Tell customers about a promotion",
+            "link": "",
+            "font": "heading",
+            "heading_size": "h1"
+          }
+        },
+        "icon_wka9WP": {
+          "type": "icon",
+          "settings": {
+            "icon": "heart",
+            "icon_size": 64
+          }
+        },
+        "text_6QAzCH": {
+          "type": "text",
+          "settings": {
+            "text": "Make an announcement",
+            "link": "",
+            "font": "body",
+            "heading_size": "h1"
+          }
+        },
+        "button_wePAqg": {
+          "type": "button",
+          "settings": {
+            "button_label": "Optional Button",
+            "button_link": "",
+            "button_style": "btn btn--primary"
+          }
+        }
+      },
+      "block_order": [
+        "text_nTjbxA",
+        "icon_wka9WP",
+        "text_6QAzCH",
+        "button_wePAqg"
+      ],
+      "disabled": true,
+      "settings": {
+        "section_height": "medium",
+        "spacing": 40,
+        "speed": 24,
+        "direction": "normal",
+        "pausable": true,
+        "color_scheme": "1",
+        "dividers": "none",
+        "prevent_animation": false
+      }
+    },
+    "newsletter_WXJigB": {
+      "type": "newsletter",
+      "blocks": {
+        "heading_cUJ39A": {
+          "type": "heading",
+          "settings": {
+            "heading": "Subscribe to our Penorama newsletter",
+            "heading_size": "h3"
+          }
+        },
+        "text_p3LHH3": {
+          "type": "text",
+          "settings": {
+            "text": "<p>Be the first to know about the most exciting new pens, pencils, paper and more!</p>",
+            "enlarge_text": false
+          }
+        },
+        "form_yBhHMp": {
+          "type": "form",
+          "settings": {}
+        }
+      },
+      "block_order": [
+        "heading_cUJ39A",
+        "text_p3LHH3",
+        "form_yBhHMp"
+      ],
+      "settings": {
+        "overlay_position": "justify-center",
+        "text_align": "text-center",
+        "color_scheme": "1",
+        "full_width": true,
+        "transparent_content_color": "#ffffff",
+        "tint_color": "#000000",
+        "tint_opacity": 20
+      }
+    }
+  },
+  "order": [
+    "3721924b-630b-4a60-b724-521fef7aa78e",
+    "slideshow",
+    "two_columns_Mqc3P8",
+    "promo_grid_DMUYkR",
+    "four_columns_kFYX3R",
+    "countdown_timer_GUE8qp",
+    "featured_product_eK7Bai",
+    "media_with_text_YBUWCW",
+    "rich_text_HULyzR",
+    "link_lists_gP8pzV",
+    "custom_liquid_izfMty",
+    "shoppable_image_hj3QLH",
+    "collection-list",
+    "featured-collection",
+    "custom_liquid_mtPQ3r",
+    "174471016778856dee",
+    "custom_liquid_346qad",
+    "1744710080746e86de",
+    "background_video_N97WRE",
+    "testimonials_JERNA6",
+    "scrolling_banner_TMrgrE",
+    "newsletter_WXJigB"
+  ]
+}

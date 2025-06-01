@@ -1,0 +1,323 @@
+
+
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165192').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165224').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165186').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165214').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165200').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165158').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165204').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165252').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165149').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165258').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165176').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    (function( jQuery ){
+  var $module = jQuery('#m-1709051165237').children('.module');
+  if(jQuery().gfYoutube) {
+    $module.gfYoutube();
+  }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+                          (function( jQuery ){
+                              try{
+                                  if(jQuery().gfV2Lazyload){
+                                      var $module = jQuery(window);
+                                      $module.gfV2Lazyload({delay:125})
+                                  }
+                              }catch(err){
+                                  console.error(err)
+                              }
+                          })( window.GemQuery || jQuery );
+                      

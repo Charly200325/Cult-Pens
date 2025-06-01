@@ -1,0 +1,56 @@
+{% if section.settings.subcollections != blank %}
+  <style>
+    .subcollection {
+      display: flex;
+      flex-flow: row wrap;
+      max-width: 100%;
+    }
+    .subcollectionitems {
+      width: 23.2%;
+      margin-right: 20px;
+      margin-bottom: 20px;
+    }
+    .subcollectionitems p {
+      font-size: 20px;
+      margin: 5px 10px 0;
+      text-align: center;
+    }
+    .subcollectionitems p {
+      color: #666666;
+    }
+  </style>
+<div class="subcollection page-width">
+  {% for item in section.settings.subcollections %}
+    <div class="subcollectionitems">
+      <a href="{{ item.url }}">
+        <img src="{{ item.featured_image | img_url: '324x' }}">
+        <div>
+          <p>{{ item.title }}</p>
+        </div>
+       </a>
+      </div>
+
+
+   {%  endfor %}
+</div>
+
+
+{% endif %}
+
+{% schema %}
+  {
+    "name": "Subcollections",
+    "settings": [
+      {
+        "type": "collection_list",
+        "label": "Subcollections",
+        "id": "subcollections"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Subcollections"
+      }
+    ]
+  }
+{% endschema %}

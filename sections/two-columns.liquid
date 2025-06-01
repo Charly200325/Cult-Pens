@@ -1,0 +1,112 @@
+  {% if section.settings.left-text != blank %}
+    <style>
+      .two-columns-container {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: center;
+      }
+      @media (max-width: 800px) {
+          .two-columns-container {
+            flex-direction: column;
+        }
+        .two-columns-content {
+          width: 100% !important;
+        }
+      }
+      .two-columns-content {
+        width: 50%;
+        text-align: center;
+      }
+      @media (min-width: 801px) {
+        .two-columns-left {
+          margin-left: 64px;
+          margin-right: 10px;
+        }
+        .two-columns-right {
+          margin-right: 94px;
+          margin-left: 10px;
+        }
+        }
+      .two-columns-left > .metafield-rich_text_field > p {
+        margin-right: 20px;
+        margin-left: 20px;
+      }
+      .two-columns-right  > .metafield-rich_text_field > p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      h3.two-columns-title {
+        font-size: 120%;
+      }
+      h3.two-columns-title a {
+        color: black;
+      }
+    </style>
+    
+    <div class="two-columns-container">
+      <div class="two-columns-left two-columns-content">
+        {% if section.settings.left-img != blank %}<a href="{{ section.settings.left-link }}"><img src="{{ section.settings.left-img | image_url: width: 800  }}"></a>{% endif %}
+        <h3 class="two-columns-title"><a href="{{ section.settings.left-link }}">{{ section.settings.left-title | strip_html }}</a></h3>
+        <p class="two-columns-left-text">{{ section.settings.left-text }}</p>
+      </div>
+      <div class="two-columns-right two-columns-content">
+        {% if section.settings.right-img != blank %}<a href="{{ section.settings.right-link }}"><img src="{{ section.settings.right-img | image_url: width: 800  }}"></a>{% endif %}
+        <h3 class="two-columns-title"><a href="{{ section.settings.right-link }}">{{ section.settings.right-title | strip_html }}</a></h3>
+        <p class="two-columns-right-text">{{ section.settings.right-text }}</p>
+      </div>
+    </div>
+  {% endif %}
+
+{% schema %}
+  {
+    "name": "Two Columns",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Left Image (mobile top)",
+        "id": "left-img"
+      },
+      {
+        "type": "url",
+        "label": "Left link",
+        "id": "left-link"
+      },
+      {
+        "type": "text",
+        "label": "Left title",
+        "id": "left-title"
+      },
+      {
+        "type": "richtext",
+        "label": "Left text",
+        "id": "left-text"
+      },
+      {
+        "type": "image_picker",
+        "label": "Right Image (mobile bottom)",
+        "id": "right-img"
+      },
+      {
+        "type": "url",
+        "label": "Right link",
+        "id": "right-link"
+      },
+      {
+        "type": "text",
+        "label": "Right title",
+        "id": "right-title"
+      },
+      {
+        "type": "richtext",
+        "label": "Right text",
+        "id": "right-text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Two Columns"
+      }
+    ]
+  }
+{% endschema %}

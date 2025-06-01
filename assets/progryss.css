@@ -1,0 +1,2862 @@
+.loo:has(div:empty) h2{
+  display:none;
+}
+.kcResultItemInner .kcResultItemImageWrap {
+    padding: 0 !important;
+  height: auto !important;
+}
+   .spare .owl-stage-outer {
+        padding-left: 0;
+    }
+.spare .subcollection .owl-nav .owl-prev{
+  left:-10px !important;
+}
+
+@media screen and (max-width:767px){
+  .spare .subcollection img{
+  max-width:100% !important;
+}
+  .spare .subcollection {
+    padding-top:0 !important;
+}
+  .spare .class{
+    padding:0 10px;
+  }
+  .spare .subcollection .owl-nav .owl-prev {
+    left: -20px !important;
+}
+    .spare .subcollection .owl-nav .owl-next {
+    right: -20px !important;
+}
+}
+.kcResultItemInner {
+    width: 219px;
+}
+
+.kcResultItemImage.kcResultItemImageHover{
+  display:none !important;
+}
+.kcResultItemImage{
+  display:block !important;
+}
+.seoText{
+      font-size: 15px;
+    line-height: 23px;
+    margin-bottom: 50px;
+}
+.spare .image{
+  margin-bottom:25px;
+}
+.spare .subcollectionitem{
+  width:210px;
+  margin:auto;
+  a{
+    text-decoration:none;
+  }
+}
+.subcollection.row{
+  margin:0 !important;
+}
+.spare .subcollection{
+  padding-top:30px;
+}
+.spare .product-block__title-price .title {
+  text-transform:uppercase;
+  margin-bottom:20px !important;
+  max-height: 19px !important;
+  min-height: 19px !important;
+  overflow: hidden;
+  text-align:center;
+}
+.kcResultItemPrice:has(.kcOrigPrice){
+  display:flex;
+}
+@media screen and (max-width:767px){
+      .spare .price .amount.theme-money {
+        margin: auto !important;
+    }
+    .spare .product-block__title-price .title{
+    display: block;
+}
+  .kcResultItemPrice:has(.kcOrigPrice){
+flex-direction:column;
+    align-items:center;
+}
+  .kcResultItemPrice .kcOrigPrice{
+  margin:0;
+}
+ .spare .subcollection .owl-nav button{
+    top:50% !important;
+  }
+}
+@media screen and (max-width:768px){
+    .product-block__title-price .title{min-height: 50px !important;}
+  .spare .product-block__title-price .title{
+    font-weight:700;
+    font-family: Soehne Dreiviertelfett;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing:1px;
+    color:#000;
+  }
+}
+
+  .kcResultItemImageWrap > a{
+  height:100% !important;
+}
+  .pdpAllCarousel > div.klevuCarausels{
+    display:none;
+  }
+  .pdpAllCarousel > div.klevuCarausels:has(.kcResultsContainer .kcResultsWrap){
+    display:block;
+  }
+.pdpAllCarousel > div.spare{
+  display:none;
+}
+.pdpAllCarousel > div.spare:has(.owl-item){
+  display:block;
+}
+.pdpAllCarousel h2{
+text-transform:capitalize;
+}
+.pdpAllCarousel{
+  padding-bottom:50px;
+}
+.pdpAllCarousel > div{
+margin:25px 0;
+}
+
+
+
+
+
+
+
+
+
+
+.klevuCategorySuggestions .klevuHeadingText::after{
+  content:" / Collection";
+}
+@media screen and (min-width:1025px){
+  .productList.klevuMeta[data-result-view="grid"] .kuResults ul{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+  }
+  .productList.klevuMeta[data-result-view="grid"] .kuResults ul li{
+    width:100% !important;
+  }
+}
+@media screen and (min-width:767px) and (max-width:850px){
+  .productList.klevuMeta[data-result-view="grid"] .kuResults ul{
+    display:grid;
+    grid-template-columns:1fr 1fr;
+  }
+  .productList.klevuMeta[data-result-view="grid"] .kuResults ul li{
+    width:100% !important;
+  }
+}
+.klevuQuickSearchingArea .klevuHeadingText{
+  font-weight:700;
+}
+.klevu-fluid.klevuTarget.kuQuickSearchAutoCompleteLayout.kuMobileDeviceEnabled.kuQuickSearchResultsContainer.kuPersonalizedSearchRecsEnabled.kuEmptySearchBox>div {
+    min-width: auto !important;
+      max-width: 858px!important;
+}
+@media screen and (max-width:767px){
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap{
+    position:relative;
+  }
+
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap header .kuDiscountBadge {
+    top: auto;
+    right: auto;
+    left: 0px;
+    bottom:0px;
+    position: absolute;
+    background: #333;
+    padding: 4px;
+    color: #fff;
+    width: max-content;
+    max-width: max-content;
+    height: auto;
+    border-radius: 0%;
+}
+}
+@media screen and (min-width:768px){
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap{
+    display:grid !important;
+  }
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap header{
+    grid-area:2;
+    position:relative;
+  }
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap header .kuDiscountBadge {
+    top: auto;
+    bottom: 100%;
+    right: auto;
+    position: absolute;
+    padding: 4px;
+    height: auto;
+    border-radius: 0%;
+    max-width: 150px;
+    width:fit-content;
+}
+}
+.kuFilterBox[data-filter="Product_Margin"] {
+display: none;
+}
+/* cart page slider */
+.buttonWrapper .kcButton{
+display:block !important
+}
+
+@media only screen and (max-width: 767px){
+  .kuSearchResultsPageContainer .kuContainer a.kuTabSelected {
+      background: #ffffff !important;
+  }
+  .template-sfx-klevu-search-results h1 {
+    font-size: 24px !important;
+}
+}
+
+.kuSearchResultsSearchBarContainer + .kuTabs,.kuTabs .kuTab[data-section="contentList"]{
+  display:none !important;
+}
+.kuContainer .kuTabs a.kuTabSelected,
+.kuContainer .kuTabs{
+    border-bottom: 0px solid #ddd !important;
+}
+.template-sfx-klevu-search-results h1 {
+    margin: 50px auto;
+    max-width: 1440px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+    font-style: normal;
+    font-size: 40px;
+    letter-spacing: 2px;
+    text-transform: none;
+    color: #0b1e33;
+}
+/* css for klevu app start here */
+.klevuLanding.kuSearchResultsPageContainer{
+    min-height: 550px;
+} 
+@media only screen and (max-width:767px){
+ .img.kuProdImg{
+   width:131px;
+   height:131px;
+ }
+ .klevuLanding.kuSearchResultsPageContainer{
+    min-height: unset !important;
+}
+}
+.productList.klevuMeta[data-result-view="list"] .kuProdWrap{
+  display: grid;
+  grid-template-columns:1fr 3fr;
+}
+.productList.klevuMeta[data-result-view="list"] .kuProdWrap footer{
+  display:flex;
+  align-items:center;
+  padding-left:30px;
+}
+.productList.klevuMeta[data-result-view="list"] .kuProdWrap footer .kuProdBottom{
+  gap:0px !important;
+  align-items:start !important;
+}
+.productList.klevuMeta[data-result-view="list"] .kuProdWrap footer .kuProdBottom .kuPrice{
+  justify-content:start !important;
+}
+.kuSearchResultsPageContainer .productList.klevuMeta[data-result-view="list"] .kuResults ul li .kuName a {
+  text-align:left;
+}
+.kuFilters[data-position="top"] .kuFilterBox .kuFilterNames.sliderFilterNames {
+  min-height: auto !important;
+}
+@media only screen and (min-width:768px) and (max-width:1100px){
+  .klevuTarget.klevu-fluid.kuQuickSearchAutoCompleteLayout > div{left: 50% !important;
+    transform: translateX(-50%) !important;
+    max-width: 95% !important;
+  }
+}
+@media (max-width: 767px) {
+  /* .kuQuickSearchAutoCompleteLayout .klevuWrap{
+    top:70px !important;
+    height:calc(100vh - 70px) !important;
+    overflow:scroll !important;
+  } */
+  .klevu-page .page-width{
+    width: 100%;
+    h1{
+      margin-top:17px;
+      text-align: center;
+    }
+  }
+  #closeInput,
+  #clearInputValue{
+    display:none;
+    background-color:transparent !important;
+    font-size: 20px !important;
+  }
+  .searchClicked button{
+    background-color:#fff !important;
+    color:#000 !important;
+  }
+  #clearInputValue{
+    right:20px !important;
+  }
+  .searchClicked #closeInput,
+  .searchClicked #clearInputValue{
+    display:inline-block;
+  }
+  .searchClicked{
+    position: fixed !important;
+    top: 0px !important;
+    left: 0px !important;
+    height: 70px !important;
+    right: 0px !important;
+    background-color: rgb(255, 255, 255) !important;
+    border-bottom: 1px solid silver !important;
+  }
+  .searchClicked > div{
+    left:50%;
+    top:50%;
+    transform:translate(-50%,-50%);
+  }
+  #closeInput{
+    left:0px !important;
+    right:auto !important;
+  }
+  .searchClicked .main-search__form{
+    margin-bottom:0px !important;
+    padding-right: 0px !important;
+    border: none !important;
+  }
+  .searchClicked .main-search__form input{
+    height:45px !important;
+    margin-left:47px !important;
+    margin-right:17px !important;
+    border: 1px solid silver !important;
+    border-radius: 25px !important;
+  }
+  .searchClicked button[type="submit"]{
+    display:none;
+  } 
+  .productList.klevuMeta[data-result-view="list"] .kuProdWrap{
+    display: grid;
+    grid-template-columns: 0 1fr 1fr !important;
+  }
+  .productList.klevuMeta[data-result-view="list"] .kuProdWrap footer{
+    padding-left:0px !important;
+  }
+}
+
+.klevuAutoSuggestionsWrap.klevuCmsSuggestions{
+  display:none !important;
+}
+#klevuSearchingArea:has(.kuSearchPersonalizationsContainer) header{
+  display:none !important;
+}
+ #klevuSearchingArea:has(.kuSearchPersonalizationsContainer) .klevuSuggestionHeading {
+   font-weight:600;
+}
+@media screen and (max-width:767px){
+  #klevuSearchingArea:has(.kuSearchPersonalizationsContainer) .klevuSuggestionHeading {
+    text-align:left;
+}
+  #klevuSearchingArea:has(.kuSearchPersonalizationsContainer) section[data-container-id="ku_quick_main_content_left"]{
+  width:100% !important;
+}
+  #klevuSearchingArea:has(.kuSearchPersonalizationsContainer) div[data-block-id="ku_quick_left_call_outs"]{
+  display:grid;
+  grid-template-columns:1fr !important;
+}
+}
+
+#klevuSearchingArea:has(.kuSearchPersonalizationsContainer) > div{
+  grid-template-columns:1fr !important;
+}
+header > section[data-block-id="ku_quick_main_header_site_navigation"]{
+  border-left:1px solid #ddd;
+}
+.klevuTarget.klevu-fluid>div {
+  width: 100% !important;
+  max-width: 858px !important;
+}
+#klevuSearchingArea > div[data-container-id="ku_quick_main_container"]{
+  display: grid;
+  grid-template-columns: 3fr 1.55fr;
+  gap: 20px;
+  padding: 30px 0px;
+}
+#klevuSearchingArea .kuQuickResultsListContainer ul{
+  display: flex;
+  flex-wrap: wrap;
+}
+#klevuSearchingArea .kuQuickResultsListContainer ul li{
+  width: 50% !important;
+  border-bottom:none !important;
+}
+.klevuAutoSuggestionsWrap {
+  border-bottom: none !important;
+  padding: 5px 10px;
+}
+#klevuSearchingArea > div[data-container-id="ku_quick_main_container"] > div[data-container-id="ku_quick_main_content_container"]{
+  grid-area:1 !important;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap main[data-block-id="ku_landing_result_item_info"] {
+  display: block;
+  width: 100%;
+  height: 100%;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap footer[data-block-id="ku_landing_result_item_footer"] {
+  height: 100% !important;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdBottom {
+  display: flex;
+  height:fit-content !important;
+  flex-direction: column;
+  align-items: center;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdTop .klevuImgWrap {
+  padding-bottom: 0;
+  height: auto !important;
+}
+.reviewWrapper{
+  min-height:20px;
+}
+.kcTitleArea,
+.kl3609e4575670,
+.kcButton,
+.main-collection-section .product-list-container,
+.kuSearchResultsPageContainer .kuSearchResultsSearchBarContainer,
+.kuSearchResultsPageContainer .kuFiltersTitleHeading,
+.kuSearchResultsPageContainer .kuAddtocart,
+.kuShowOpt,
+.kuProdAdditional{
+  display:none;
+}
+
+.kuFilterBox .kuFilterNames.kuFilterCollapse {
+    height: 0 !important;
+    overflow: hidden !important;
+}
+.kuFilterBox .kuFilterNames {
+    max-height: 270px!important;
+    height: fit-content !important;
+    overflow-y: scroll !important;
+}
+.kuFilterBox .kuFilterNames::-webkit-scrollbar {
+  width: 5px;
+}
+.kuFilterBox .kuFilterNames::-webkit-scrollbar-track {
+  background: #f4f4f4; 
+}
+.kuFilterBox .kuFilterNames::-webkit-scrollbar-thumb {
+  background: #d0d1d1; 
+    border-radius:10px;
+}
+.kuFilterHead.kuCollapse + .kuFilterNames{
+  padding-top:10px !important;
+}
+.kuFilterBox.kuMulticheck .kuFilterIcon:before {
+    border-radius: 2px !important;
+}
+.kufacet-text{
+  font-size:15px !important;
+}
+.kuFilterTotal{
+  font-size:14px !important;
+  opacity:0.6 !important;
+}
+.kuFilterTotal::before{
+  content:'('
+}
+.kuFilterTotal::after{
+  content:')'
+}
+.klevu-rating-l2{
+  float:left !important;
+}
+@media only screen and (min-width: 768px) and (max-width: 911px){
+  .kuSearchResultsPageContainer .kuResults ul li {
+    width: 50% !important;
+    padding: 5px;
+  }
+  .kuSearchResultsPageContainer .productList.klevuMeta[data-result-view="list"] .kuResults ul li {
+    width: 100% !important;
+    padding: 5px;
+  }
+  .kuSearchResultsPageContainer .klevuWrap>div,.template-sfx-klevu-search-results h1 {
+    width: 95% !important;
+  }
+  .kuSearchResultsPageContainer .kuResultWrap .kuPagination {
+    padding: 30px 5px!important;
+  }
+}
+@media only screen and (min-width:0px) and (max-width:767px){
+  .filterWrapper{
+    display:none;
+  }
+  .filterWrapper > div:first-child{
+    display:none;
+    padding-left:20px !important;
+    background-color:#ffffff;
+    width:85% !important;
+    height:100% !important;
+    margin-bottom: 0px !important;
+    overflow: scroll !important;
+  }
+  .klevuResultsBlock{
+    padding:0px 10px !important;
+  }
+  .klevuQuickSearchingArea .klevuProductsViewAll{
+    display:none !important;
+  }
+  .klevuQuickSearchingArea .klevuSuggestionHeading{
+    text-align:center;
+    border-bottom: 1px solid silver;
+    margin-bottom: 15px;
+  }
+  .klevuTarget.klevu-fluid > .klevuWrap {
+    left: 0%!important;
+  }
+  #klevuSearchingArea>div[data-container-id=ku_quick_main_container] {
+    grid-template-columns: 1fr !important;
+    padding-top:0px !important;
+  }
+  #klevuSearchingArea .kuQuickResultsListContainer ul li {
+    width: 100%!important;
+  }
+  .kuSearchResultsPageContainer .kuPagination {
+    margin-bottom: 27px !important;
+  }
+  .kuSearchResultsPageContainer .kuResultWrap .kuPagination {
+    padding: 30px 5px !important;
+  }
+  .kuSearchResultsPageContainer .kuResults > ul .klevuProduct{
+    margin-bottom:0px !important;
+  }
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdBottom {
+    align-items:start !important;
+  }
+  .filterWrapperClose{
+    position:fixed;
+    top:10px;
+    right:15px;
+  }
+  .filterWrapperClose svg{
+    width: 30px;
+    height: 30px;
+  }
+  .mobileFilterOpen{
+    background-color:rgb(161 161 161) ;
+    display:block;
+    position:fixed;
+    top:0px;
+    left:0px;
+    right:0px;
+    z-index:999999;
+    height:100vh;
+    overflow:scroll;
+  }
+  .customButtons{
+    display:grid !important;
+    grid-template-columns:1fr 1fr;
+    z-index: 12 !important;
+    margin-bottom: 15px;
+    width: 100%;
+    max-width: 100%;
+    height:45px;
+  }
+  .customButtons > div{
+    border:1px solid #ddd;
+    display:flex !important;
+    justify-content:center;
+    align-items:center;
+  }
+  .filterBtn svg{
+    width:21px;
+    height:21px;
+    margin-right:13px;
+  }
+  .filterBtn span{
+    font-size:15px !important;
+  }
+  .kuSearchResultsPageContainer .kuDropdown .kuDropdownLabel {
+    border:none !important;
+}
+  .kuSearchResultsPageContainer .kuDropdown .kuDropdownOptions {
+    top: 35px !important;
+}
+  .kuSearchResultsPageContainer .kuResultWrap header[data-block-id=ku_landing_result_header] {
+    padding-left: 0px !important;
+    flex-direction: row-reverse;
+    z-index:1;
+  }
+  .kuSearchResultsPageContainer .kuResultWrap .kuResults ul li .kuProdWrap{
+    display: grid !important;
+    grid-template-columns: 0fr 1fr 1.4fr;
+    border-bottom: 1px solid #ddd !important;
+  }
+  .kuSearchResultsPageContainer .kuResults ul li .kuName a,
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdAdditional .kuProdAdditionalData {
+    text-align: left !important;
+  }
+  .kuSearchResultsPageContainer .kuProdBottom .kuPrice {
+    justify-content: start !important;
+    flex-direction: column;
+    gap: 0px !important;
+    margin-top: 10px !important;
+  }
+  .kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdAdditional {
+    position: static !important;
+  }
+  .kuProdBottom .kuPrice>div, .kuProdBottom .kuPrice>span {
+    margin-top: 0px !important;
+  }
+ .kuSearchResultsPageContainer .kuResultContent .kuFilters[data-position="top"] .kuFilterHead + .kuFilterNames.kuFilterCollapse{
+    padding-top:0px !important;
+    padding-bottom:0px !important;
+  }
+ .kuSearchResultsPageContainer .kuResultContent .kuFilters[data-position="top"] .kuFilterHead:hover+.kuFilterNames {
+    position: relative !important;
+    padding-left: 4px !important;
+   border:none !important;
+  }
+}
+.kuSearchResultsPageContainer .kuPagination a {
+    color: #f5a201 !important;
+    border-right: none !important;
+}
+.kuSearchResultsPageContainer .kuPagination .kuCurrent {
+    color: #333333 !important;
+  line-height: 18px;
+    margin: 0;
+    position: relative;
+    display: inline-block;
+    padding-left: 0;
+    padding-right: 10px;
+    cursor: pointer;
+    text-decoration: none;
+    font-size: 14px;
+}
+.kuSearchResultsPageContainer .kuPagination {
+    width: 100% !important;
+    float: none !important;
+    text-align: center !important;
+    padding: 60px 5px !important;
+    margin-bottom: 42px;
+    margin-top: 23px;
+}
+.kuSearchResultsPageContainer .kuResultsHeadingTitleContainer {
+    border-bottom:none !important;
+}
+header[data-block-id="ku_landing_result_header"]{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.kuFilters[data-position="top"] .kuFilterBox {
+    display: contents !important;
+}
+.kuSearchResultsPageContainer .kuContainer{
+    max-width:100% !important;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap {
+    border:none !important;
+}
+.klevuLanding.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdTop .klevuImgWrap {
+    height: auto !important;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuProdWrap .kuProdTop .klevuImgWrap a img {
+    position:relative !important;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuName a:hover {
+    text-decoration:none !important;
+}
+.kuSearchResultsPageContainer .kuResults ul li .kuName a{
+    font-size:16px !important;
+    font-family: Soehne Leicht;
+    text-align:center;
+    display:block !important;
+}
+.kuProdBottom .kuName.kuClippedOne{
+    -webkit-line-clamp: 2 !important;
+    min-height: 41.6px;
+}
+.kuResults > ul .klevuProduct{
+    margin-bottom:25px !important;
+}
+.kuProdBottom .kuPrice {
+    height: fit-content !important;
+    display:flex !important;
+    gap:5px !important;
+    justify-content: center !important;
+}
+.kuPrice .kuOrigPrice {
+    text-decoration:none !important;
+}
+.kuPrice .kuOrigPrice > span{
+    font-size: 16px !important;
+    text-decoration:line-through !important;
+}
+.kuProdBottom .kuPrice > div,.kuProdBottom .kuPrice > span{
+    font-size: 20px !important;
+    line-height: 130%;
+    margin-top:10px;
+    text-align: center;
+    width:fit-content !important;
+    margin-right: 0px;
+    height: fit-content !important;
+    font-family: Soehne Dreiviertelfett !important;
+}
+.kuPriceSlider.klevuSliderFilter{
+    min-height:70px;
+}
+.kuResultContent .kuFilters[data-position="top"] .kuFilterBox .kuFilterNames.kuFilterCollapse{
+    height: 0 !important;
+}
+.kuFilterBox .kuFilterHead {
+    padding: 20px 0 !important;
+    font-size: 14px;
+    font-family: Soehne Leicht;
+    font-weight: 700;
+    color: #222;
+}
+.kuFilterBox .kuFilterHead.kuExpand::after,
+.kuFilterBox .kuFilterHead.kuCollapse::after{
+    border-width: 0 2px 2px 0 !important;
+    top: 22px !important;
+}
+.kuFilterBox {
+    margin-bottom: 0px !important;
+    padding-bottom: 0px !important;
+}
+.kuSearchResultsPageContainer .kuFilters{
+    padding-left:0px !important;
+    padding-right:30px !important;
+}
+@media only screen and (max-width:800px){
+  .kuSearchResultsPageContainer .kuFilters{
+    padding-right:0px !important;
+  }
+  .kuSearchResultsPageContainer .klevuWrap > div,.template-sfx-klevu-search-results h1 {
+    width: 100% !important;
+  }
+}
+.kuSearchResultsPageContainer header[data-block-id="ku_landing_result_header"]{
+    padding-left:5px !important;
+}
+.section.collection-page{
+    margin-bottom:0px !important;
+}
+.section.collection-page .collection-header {
+    margin-bottom:0px !important;
+}
+.kuSearchResultsPageContainer .klevuWrap > div{
+    margin: 0 auto;
+    max-width: 1440px;
+    width: 90%;
+    padding-left: 20px;
+    padding-right: 20px;
+}
+.kuSearchResultsPageContainer .klevuWrap > div > .kuContainer{
+    padding:0px;
+    margin:0px;
+}
+
+.kcResultItemImageWrap{
+    padding:25px !important;
+}
+.kcResultItemNameValue{
+    font-family: Soehne Dreiviertelfett !important;
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+    color: #000;
+    min-height: 34px;
+    font-weight: 500;
+    text-transform:uppercase;
+}
+.kcResultItemPriceValue{
+    font-family: Soehne Dreiviertelfett !important;
+    font-style: normal;
+    font-size: 20px!important;
+    line-height: 30px;
+    text-align: center;
+    color: #080033!important;
+    width: max-content;
+    display: block;
+    margin: auto;
+}
+
+.kl8e26b4255801 .kcResultItemImage{
+    height:auto !important;
+}
+div[data-view="carousel"] .kcResultsInner .kcResultItem{
+  width:25% !important;
+}
+div[data-view="carousel"] .kcResultsInner .kcResultItem .kcResultItemInner{
+  margin: auto !important;
+}
+div[data-view="carousel"] .kcResultsInner .kcResultItem .kcResultItemInner > .kcResultItemImage{
+  /* padding-bottom:25px; */
+  margin-bottom: 25px;
+}
+@media srceen and (max-width:767px){
+  div[data-view="carousel"] .kcResultsInner .kcResultItem .kcResultItemInner > .kcResultItemImage{
+  height:auto !important;
+}
+}
+div[data-view="carousel"] .kcResultsInner{
+    padding-bottom:20px !important;
+  }
+.kuFilterTagsContainer {
+    margin-bottom: 10px !important;
+    padding-left: 10px !important;
+    padding-top: 0px !important;
+}
+@media only screen and (min-width:900px) and (max-width:1100px){
+  div[data-view="carousel"] .kcResultsInner .kcResultItem{
+  width:33.33% !important;
+}
+}
+@media only screen and (min-width:768px) and (max-width:899px){
+  div[data-view="carousel"] .kcResultsInner .kcResultItem{
+  width:50% !important;
+}
+}
+@media only screen and (max-width:767px){
+  div[data-view="carousel"] .kcResultsInner .kcResultItem{
+  width:50% !important;
+    min-width:auto !important;
+}
+  .kcBannerArea .kcResultItemInner{
+    width:90% !important;
+    
+  }
+.kuFilterTagsContainer {
+    margin-bottom: 15px!important;
+    padding-left: 2px!important;
+}
+}
+/* css for klevu app end here */
+
+
+
+
+
+@font-face { 
+font-family: 'Soehne Dreiviertelfett';
+src: url(https://cdn.shopify.com/s/files/1/0659/6388/4787/files/soehne-dreiviertelfett_a8a87f6c-9ed0-4d43-8ebd-1fdba597ed7a.woff2?v=1681476469) format('woff2');
+} 
+
+@font-face { 
+font-family: 'Soehne Leicht';
+src: url(https://cdn.shopify.com/s/files/1/0659/6388/4787/files/soehne-leicht_aed076ca-fd6b-4298-971f-5e73114991b3.woff2?v=1681476470) format('woff2');
+} 
+@media screen and (min-width:800px) and (max-width:1300px){
+  .brand-section .row{
+    flex-wrap:wrap !important;
+    justify-content:start !important;
+  }
+  .brand-section .item{
+    max-width:11% !important;
+    margin-bottom:30px;
+  }
+}
+@media screen and (min-width:1301px){
+  .brand-section .row{
+    flex-wrap:wrap !important;
+    justify-content:start !important;
+  }
+  .brand-section .item{
+    max-width:11.7% !important;
+    margin-bottom:30px;
+  }
+}
+
+@media(min-width: 1560px){
+  .banner-carousel img {
+    height: 100%;
+}
+}
+
+@media(min-width: 768px) and (max-width: 1180px){
+ .tmenu_wrapper .tmenu_app .tmenu_nav .tmenu_item--root > .tmenu_item_link {
+    color: inherit;
+    padding-left: 5px !important;
+    padding-right: 5px !important;
+}
+ .tmenu_nav li.tmenu_item_level_0 span.tmenu_item_text {
+    font-size: 10px!important;
+}
+  .first-col, .second-col, .third-col, .fourth-col{
+    padding: 0px 12px !important;
+/*     height: 90px; */
+  }
+}
+@media(min-width: 821px) and (max-width: 1230px){
+.fourth-col {
+    height: 90px;
+}
+}
+@media(min-width: 768px) and (max-width: 1280px){
+ .banner-carousel .storiesimg img {
+    height: 100%;
+}
+  span.desktop {
+    font-size: 16px !important;
+}
+    h1.banner-heading {
+    font-size: 20px !important;
+}
+}
+@media(min-width: 1281px) and (max-width: 1550px){
+ .banner-carousel .storiesimg img {
+    height: 100%;
+}
+  span.desktop {
+       font-size: 18px!important;
+    font-weight: 700;
+    line-height: 23px;
+}
+    h1.banner-heading {
+    font-size: 38px !important;
+}
+}
+@media(min-width: 768px){
+   .banner-carousel  .owl-dots {
+display: block;
+    margin: auto;
+    position: relative;
+    bottom: 40px;
+    width: max-content;
+}
+  .banner-carousel-container{
+    margin-bottom: 20px;
+  }
+  .banner-carousel {
+    padding-top: 30px;
+}
+  .banner-carousel{
+    display: flex;
+  }
+
+  h1.banner-heading {
+    font-size: 50px;
+    color: #fff;
+    font-weight: 700;
+    text-transform: capitalize;
+    letter-spacing: 2px;
+    line-height: 1.2em;
+}
+
+    .banner-carousel .first-col{
+   flex-basis: 44%;
+      max-width: 44%;
+     display: block;
+ }
+   .banner-carousel .second-col{
+   flex-basis: 56%;
+      max-width: 56%;
+     display: block;
+     padding: 0px !important;
+ }
+  .banner-carousel .stories {
+    display: flex;
+}
+  .banner-carousel span.collection-name {
+    bottom: 30px !important;
+    right: 15px !important;
+  }
+  .mobile{display: none;}
+span.desktop {
+    color: #fff;
+    font-size: 21px;
+    letter-spacing: .05px;
+    font-weight: 400;
+    line-height: 23px;
+}
+    .banner-carousel .first-col {
+    padding: 90px 50px;
+}
+}
+@media(max-width: 767px){
+  .banner-carousel .owl-dots{
+    margin-top: -10px!important;
+    margin-bottom: 10px !important;
+    display: flex !important;
+    width: 100% !important;
+    justify-content: center;
+  }
+  .desktop{display: none;}
+.banner-carousel .first-col {
+    padding: 30px 10px 1px;
+}
+ .banner-carousel  span.mobile {
+    color: #fff;
+    font-size: 10px;
+    font-weight: 400;
+    text-align: center;
+}
+  
+ .banner-carousel  h1.banner-heading {
+    text-align: center;
+    /* width: 100%; */
+    margin: auto;
+    /* display: block; */
+    color: #fff;
+}
+}
+ .banner-carousel.carousel button.owl-dot.active {
+    background: #f5a201 !important;
+}
+ .banner-carousel button.owl-dot {
+    height: 15px;
+    width: 15px;
+    border: 1px solid #f5a201 !important;
+    border-radius: 50%;
+    margin-right: 10px;
+}
+
+span.mobile_description p {
+    margin: 0px !important;
+}
+.title-icon-container {
+    display: flex;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+    justify-content: space-between;
+}
+.mobile_description ul {
+    margin: 0px !important;
+}
+.title-icon-container h1 {
+    margin: 0px;
+}
+
+.collection-icon {
+    margin-left: 20px;
+}
+.fourth-col svg {
+    margin-top: -20px;
+}
+
+.collection-banner{
+  margin-bottom:30px;
+  margin-top:20px;
+}
+
+.cart-form .half.column:last-child{
+  float:right !important;
+}
+
+.mobile-descriptn h3{
+  margin-top:0px !important;
+}
+
+.mobile-descriptn.rte.mdescriptn{
+   /* margin-bottom:25px !important; */
+}
+
+.mobile-descriptn.rte.mdescriptn{
+  width:100% !important;
+}
+.mobile_description p{
+  margin-bottom:15px !important;
+}
+.mobile_description{
+  margin-bottom:15px;
+}
+.subcollection button.owl-prev {
+    left: 3px;
+}
+.subcollection button.owl-next {
+    right: -15px;
+}
+
+.subcollection .owl-nav span {
+    font-size: 70px;
+    position: relative;
+    top: -5px;
+    color: #d3d3d3;
+}
+.subcollection .owl-nav button {
+    position: absolute !important;
+    top: 40% !important;
+    transform: translateY(-50%) !important;
+}
+@media screen and (max-width:850px){
+   .mobile_description_wraper{
+  width:100% !important;
+}
+}
+/* .mobile_description_wraper{
+  width:50%;
+  transition:all 0.3s ease-in-out;
+} */
+  .tmenu_col.tmenu_submenu_tab_content li a span,.tmenu_item_level_2 a span{
+  text-transform: none!important;
+}
+.tmenu_item.tmenu_item_level_3.tmenu_item_submenu_type_automatic.tmenu_item_mobile.tmenu_item_layout.tmenu_item_layout_text .tmenu_item_text{
+    text-transform: none!important;
+}
+
+@media screen and (max-width:540px){
+  #qikify-tmenu-mobilemenu{
+  text-transform:uppercase !important;
+}
+ 
+  .tmenu_item_mobile .tmenu_item_link{
+        padding: 12px 20px !important;
+    font-family:'Soehne Dreiviertelfett'
+  }
+  .recently-viewed-grid-items{
+    height:90% !important;
+  }
+
+}
+
+.product-promotion{
+  border:2px solid #f6f6f6;
+  padding:11px 14px;
+  margin-bottom:20px !important;
+}
+.product-promotion p:first-child{
+  color:#f5a201 !important;
+  font-size:10px;
+  font-weight:600;
+  letter-spacing:2px;
+  margin:0px !important;
+}
+.product-promotion p{
+  letter-spacing:0.3px;
+  font-size:11px;
+  margin:0px !important;
+  color:#013c58 !important;
+}
+@media (min-width: 820px) and (max-width: 1280px){
+  .owl-stage-outer {
+    padding-left: 15px;
+}
+   .banner-carousel .owl-stage-outer {
+    padding-left: 0px;
+}
+}
+@media(max-width: 768px){
+ .subcollection button.owl-prev {
+    left: -15px;
+}
+}
+@media screen and (max-width:540px){
+  .template-search .usf-results .product-block{
+  width:100% !important;
+}
+  .template-search .usf-results .product-block .image{
+    max-width:40% !important;
+    padding:12px;
+  }
+  .template-search .usf-results .product-block .product-block__title-price{
+    max-width:60% !important;
+  }
+  .template-search .usf-results .product-block{
+    border-bottom: 1px solid #E4E1D4;
+  }
+  .template-search .usf-results .product-block .product-block__title-price a span{
+    font-size:13px !important;
+    font-family:Soehne Leicht !important;
+  }
+  .template-search .usf-results .product-block .product-block__title-price .amount.theme-money::after{
+    right:-50px !important;
+  }
+}
+
+.product-description.rte.product-detail__gap-lg{
+  max-width:55% !important;
+}
+@media screen and (max-width:768px){
+  .product-description.rte.product-detail__gap-lg{
+  max-width:100% !important;
+}
+}
+.mobile_description p{
+    margin-bottom:0px;
+}
+.subcollection{
+  display:flex;
+  flex-flow:row wrap;
+}
+.subcollectionitems{
+  width:23.2%;
+  margin-right:20px;
+  margin-bottom:20px;
+}
+@media screen and (min-width:1025px) and (max-width:1277px){
+   .subcollection{
+  display:flex;
+  flex-flow:row wrap;
+    justify-content:space-between;
+}
+  .subcollectionitems{
+  width:21.5% !important;
+     margin-right:0px !important;
+}
+}
+@media screen and (min-width:541px) and (max-width:1024px){
+  .subcollectionitems{
+  width:31% !important;
+     margin-right:15px !important;
+}
+}
+@media screen and (max-width:540px){
+  .subcollectionitems{
+  width:47% !important;
+     margin-right:0px !important;
+}
+
+
+  .subcollection{
+  display:flex;
+  flex-flow:row wrap;
+    justify-content:space-between;
+}
+  .subcollectionitems p{
+  font-size: 15px !important;
+}
+}
+.subcollectionitems p{
+  font-size: 20px;
+    margin: 20px 10px;
+    text-align: center;
+    margin-bottom:0px;
+}
+h1,h2,h3,h4,h5,h6{
+  font-family: Soehne Dreiviertelfett !important;
+}
+body{
+   font-family:Soehne Leicht !important;
+}
+
+@media screen and (max-width:280px){
+  .abcd{
+  padding:0px 45px !important;
+}
+
+}
+.template-sfx-about-us .info-tabs ul{
+  display:none !important;
+}
+.ootb-tabcordion h2.ga-title.section-title {
+    display: none;
+}
+.ootb-tabcordion  #ga-product_related{
+  margin: 0px auto;
+}
+.ootb-tabcordion .ga{
+  padding-top: 0px !important;
+}
+.template-sfx-mothers-day .upper-wrapper .shop-by-desc{
+  margin-top:-25px !important;
+}
+.template-sfx-fathers-day .shop-by-desc{
+  margin-top:-25px !important;
+ 
+}
+@media screen and (max-width:540px){
+   .template-sfx-fathers-day .upper-wrapper .shop-by-desc{
+    margin-top:-10px !important;
+}
+  }
+
+.template-sfx-fathers-day .link1{
+  width:24% !important;
+  margin-bottom:0px !important;
+}
+@media screen and (max-width:540px){
+   .template-sfx-fathers-day .link1{
+    width:100% !important;
+  }
+  }
+/* ------------------------------------------- */
+.template-sfx-christmas .abcd{
+  margin-top:20px !important;
+}
+
+/* ------------------------------------------- */
+.template-sfx-valentines-day .upper-wrapper .shop-by-desc{
+  margin-top:-25px !important;
+}
+@media screen and (max-width:540px){
+   .template-sfx-valentines-day .upper-wrapper .shop-by-desc{
+    margin-top:-10px !important;
+}
+  }
+
+
+.template-sfx-valentines-day .shop-by-desc{
+  text-align:left !important;
+}
+.template-sfx-valentines-day .abcd .owl-nav.disabled{
+  display:block !important;
+}
+.template-sfx-valentines-day .abcd .owl-item .product-block{
+  width:100% !important;
+}
+.template-sfx-valentines-day .abcd {
+    margin: 50px auto !important;
+  margin-top:0px !important;
+    padding-bottom:20px !important;
+}
+/* --------------------------- */
+
+.template-sfx-mothers-day .abcd .owl-item .product-block{
+  width:100% !important;
+}
+
+.template-sfx-mothers-day .abcd .owl-nav.disabled{
+  display:block !important;
+}
+
+.template-sfx-mothers-day .abcd {
+    margin: 50px auto !important;
+  margin-top:0px !important;
+    padding-bottom:20px !important;
+}
+
+@media screen and (max-width:540px){
+   .template-sfx-mothers-day .upper-wrapper .shop-by-desc{
+    margin-top:-10px !important;
+}
+  }
+/* ----------------------------- */
+
+
+@media (min-width: 1660px){
+ .nav-container .main-nav .nav-item .nav-item-link {
+    padding: 2em 2.5em !important;
+}
+ .toolbar-right  .toolbar-icons {
+    width: 115px!important;}
+}
+span.icon {    align-items: center;    display: flex;    padding-left: 5px;}
+.product-details .product-price .was-price{font-size: 12px !important;}
+.swym-add-to-cart-btn.swym-button{padding: 12px !important;}
+.swym-btn-container .swym-button.swym-added *:not(.swym-tooltip){  color: #fff !important; opacity: 1 !important;}
+.template-product .swym-wishlist-button-bar .swym-added.swym-add-to-wishlist{background: #F5A201 !important;  color: #fff !important; opacity: 1 !important;}
+.swym-ui-components .swym-bg-2, .swym-ui-component .swym-bg-2{background: #F5A201 !important;   border-radius: 4px;}
+.swym-ui-component .swym-wishlist-grid .swym-wishlist-item{border: none !important;  }
+.main-search__form{border: 1px solid #F5A201 !important;}
+.main-search__form button{    background: #F5A201;}
+input[type=email]::placeholder{color: #013C58 !important; opacity: 0.3;}
+.product-detail-tag{margin-top: 20px;}
+.text-with-icon .col{display: flex;      align-items: center;}
+.brand-section img{width: auto;}
+/* .recently-viewed-wrapper {padding: 40px 0px;} */
+.selector-wrapper--swatch{margin-bottom: 30px !important;}
+.product-details hr.divider__gap-above-small{margin: 30px 0px 10px 0px;}
+
+.product-form .payment-and-quantity--buttons-active, .swym-btn-container.swym-inject{max-width: 100%;  width: 100%;}
+.swym-btn-container[data-position=default] .swym-add-to-wishlist.swym-text {
+    width: 100% !important;
+    margin: 0px 0px 20px 0px !important;
+    font-family: 'Soehne Dreiviertelfett';
+    font-size: 12px !important;
+    letter-spacing: 2px;
+    color: #080033 !important;
+}
+.template-page #content .section {
+  margin-top: 0px !important;
+    background: #F6F6F6;
+    width: 100%;
+    max-width: 100%;
+}
+.reading-width {
+    width: 100% !important;
+    max-width:100%
+}
+#page-wrap-inner{background: #fff;}
+.product-detail-tag {
+    padding: 15px;
+    border: 1px solid #FBF9F6;
+    background: #FBF9F6;
+    border-radius: 4px;
+}
+/* .desktop-tab ul.tabs li.current{background: #f6f6f6 !important;} */
+.desktop-tab{padding: 0px;}
+.price-container, .ex-vat{position: relative;}
+.was-price.theme-money{
+    font-family: "Soehne Leicht";
+    position: relative;
+    padding-left: 39px;
+    color: #080033 !important;
+    opacity: 1 !important;
+}
+.was-price.theme-money::before{
+    position: absolute;
+    left: 0px;
+  content:"RRP";
+}
+.ex-vat{position: absolute;    left: 100px;    bottom: 32px; font-family: "Soehne Leicht"}
+.ex-vat:after{position: absolute; height: min-content; width: max-content; content: "ex VAT";      padding-left: 5px;}
+.recently-viewed-wrapper h2{
+  font-family: 'Soehne Dreiviertelfett';
+font-style: normal;
+font-size: 16px;
+line-height: 20px;
+letter-spacing: 2px;
+text-transform: uppercase;
+}
+.product-form .selector-wrapper.selector-wrapper--swatch:not(.selector-wrapper--swatch-image) a:before{
+  height: 20px;
+  width: 20px;
+}
+.option-selector label{
+    font-family: 'Soehne Leicht';
+    font-size: 15px;
+    font-weight: 700;
+    color: #000;
+    margin-bottom: 7px !important;
+}
+ ul.tabs, .prouct-page-tab {
+        margin: 0px;
+        padding: 0px;
+        list-style: none;
+        margin-top: 20px;
+    }
+.desktop-tab ul.tabs {
+    background: #fff;
+}
+.ootb-tabcordion--tabs .tab {
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: #ededed;
+    color: #222 !important;
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+  border-radius: 0px !important;
+    }
+  ul.tabs li{
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: #ededed !important;
+    color: #080033 !important;
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+
+    }
+ul.tabs li.current{
+    display: inline-block;
+    padding: 10px 15px;
+    cursor: pointer;
+    background: #F5A201 !important;
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF !important;
+}
+.heading {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+      padding-bottom: 5px;
+}
+
+.ootb-tabcordion--tabs .tab.is-active {
+    background: #F5A201;
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff !important;
+  border-radius: 0px;
+}
+
+    .tab-content {
+        display: none;
+        padding: 15px;
+    }
+
+    .tab-content.current, .tab-content.active {
+        display: inherit;
+    }
+
+#tab3 .container{margin: 0px !important; padding: 0px !important;  width: 100% !important;}
+span.first-line, .recently-viewed-title{
+      font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 11px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    color: #F5A201;
+}
+span.second-line{
+  font-family: 'Soehne Leicht';
+    font-size: 12px;
+    line-height: 24px;
+    text-align: center;
+    color: #013C58;
+}
+.product-details .product-detail__gap-lg {
+    padding-top: 0px;
+    padding-bottom: 5px !important;
+}
+.tag{
+    border: 2px solid whitesmoke;
+    padding: 8px;
+}
+span.brand, span.type{
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 24px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #013C58;
+
+    a{
+      color:inherit;
+      opacity: 0.4;
+
+      &:hover{
+        color:#e9a63a;
+        opacity: 1;
+      }
+    }
+}
+.sharing.social-links {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #080033;
+      padding-top: 35px;
+}
+.product-price .price__current{
+    font-family: 'Soehne Dreiviertelfett' !important;
+    margin: 20px 0px !important;
+    font-size: 24px !important;
+    line-height: 32px !important;
+    color: #080033 !important;
+    width: min-content;
+  position: relative;
+}
+/*  .current-price.theme-money:before {
+    position: absolute;
+    content: "inc VAT";
+    height: 100%;
+    width: max-content;
+    right: -50px;
+    font-family: Soehne Leicht;
+    font-size: 15px;
+    line-height: 18px;
+    bottom: -9px;
+    text-transform: lowercase;
+} */
+.price-container .product-details .product-price .current-price{text-transform: lowercase;}
+.qty-adjuster__inner .qty-adjuster__up, .qty-adjuster__inner .qty-adjuster__down {
+    background-color: #fff !important;
+    color: #595959 !important;
+}
+
+.product-details .backorder p {
+    margin-bottom: 0;
+    font-size: 16px;
+    font-weight: 600;
+}
+  
+.btn.product-add {
+    background: #f5a201;
+    color: #fff;
+    font-family: 'Soehne Dreiviertelfett';
+    letter-spacing: 2px;
+    font-size: 12px;
+    line-height: 16px;
+    text-transform: uppercase;
+      border-radius: 4px;
+}
+.shopify-payment-button__button.shopify-payment-button__button--unbranded, .shopify-payment-button{display: none !important;}
+.qty-adjuster__inner {
+    border: 1px solid whitesmoke;
+    border-radius: 4px;
+      box-shadow: none;
+}
+.delivery-text {
+    background: #080033;
+    font-family: 'Soehne Leicht';
+    color: #fff;
+    font-size: 10px;
+    line-height: 24px;
+    letter-spacing: 1px;
+      padding: 15px !important;
+  border-radius: 4px;
+}
+.delivery-text svg{width: 24px; height: 21px; margin-right: 10px;}
+.read-more-button{
+  font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0B1E33;
+    background: none;
+    border: 0px;
+    padding: 0px;
+      margin-bottom: -115px;
+}
+.read-more-button:hover, .read-more-button:focus{
+    border-color: none;
+     background: #fff;
+     color: #000;
+  }
+.modal-heading{
+  display: none !important; 
+}
+.modal.active .modal-heading{
+  display: block !important; 
+}
+     .modal{
+  display: none; /* Hidden by default */
+  position: fixed; /* Stay in place */
+  z-index: 99999999; /* Sit on top */
+  padding-top: 50px; /* Location of the box */
+  left: 0;
+  top: 0;
+  width: 100%; /* Full width */
+  height: 100%; /* Full height */
+  overflow: auto; /* Enable scroll if needed */
+  background-color: rgb(0,0,0); /* Fallback color */
+  background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+}
+
+/* #shopify-section-header .tmenu_item_link .tmenu_item_text {
+  text-transform: capitalize !important;
+  letter-spacing: 0;
+} */
+
+form#contact_form {
+    margin-top: 60px;
+}
+
+
+/* Modal Content */
+.modal-content {
+  background-color: #fefefe;
+  margin: auto;
+    padding: 5em 4em;
+  border: 1px solid #888;
+  width: 749px;
+}
+
+/* The Close Button */
+.close {
+  color: #aaaaaa;
+  float: right;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.close:hover,
+.close:focus {
+  color: #000;
+  text-decoration: none;
+  cursor: pointer;
+}
+
+
+.cc-toolbar-filter-toggle, .cc-accordion-item__title{
+      font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0B1E33 !important;
+}
+    .show-read-more .more-text{
+        display: none;
+    }
+.filter{
+    font-family: 'Soehne Leicht';
+    font-size: 14px;
+    line-height: 24px;
+    color: #080033;
+}
+.cc-toolbar-filter-toggle svg{
+color: #F5A201;
+}
+.cc-price-range__bar-active{color: #F5A201;}
+.text-beside-logo-column p {
+    font-family: 'Soehne Leicht' !important;
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.05px;
+    color: #FFFFFF;
+}
+.collection-header.coloured-split {
+    background-color: #fff !important;}
+.footer-columns li a {
+    font-family: 'Soehne Leicht';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.05px;
+    color: #FFFFFF;
+}
+.breadcrumbs {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 1px;
+/*     text-transform: uppercase; */
+    color: #080033;
+}
+
+  .inline-row .inline-item.left{ 
+    display: flex;
+    font-family: 'Soehne Leicht';
+    font-size: 14px;
+    line-height: 24px;
+    letter-spacing: 0.05px;
+  }
+.announcement-bar .announcement-bar__inner {    display: flex;    align-items: center;}
+  .brand-section{background: #F6F6F6;      padding: 50px 0px; margin-top: 30px;}
+  .brand-section .item img{border-radius: 50%;}
+  .storiesimg{ position: relative;}
+  span.collection-name:hover{background: #F5A201; }
+
+
+.inline-input-button, .inline-input-button input[type=submit]{ 
+     border-radius: 0px !important;
+     font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;}
+
+input.required::placeholder {
+    font-style: normal;
+    font-weight: 700;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #013C58;
+}
+.page-footer .hash-link, .social-links__list li a, .page-footer .back-to-top-row svg {
+    color: #f5a201 !important;     fill: #f5a201 !important; 
+}
+.on-sale .from, .price .from {display: none !important;}
+  .announcement-bar{box-shadow: inset 0px -1px 0px rgb(255 255 255 / 61%);}
+.text-with-icon .row{display: flex;}
+.first-col svg , .second-col svg , .third-col svg{    width: 55px;    height: 90px;}
+.fourth-col svg {    width: 50px;    height: 25px;}
+.text-with-icon {background: #F6F6F6;}
+.announcement-bar, .toolbar-container{background-color: #080033 !important; color: #fff;}
+  .text-with-icon h2{
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000;
+        margin: 0px;
+}
+.product-block:not(.layout-align-beside) .product-block__title-price{justify-content: start !important;}
+
+@media(min-width: 1025px){
+  .template-product .owl-item .fourth-col {
+    margin-top: 17px;
+}
+}
+
+@media (max-width: 1366px){
+.toolbar-icons {
+    padding-left: 65px;
+}
+}
+ @media(min-width: 1025px) and (max-width: 1280px){
+.main-nav .nav-item .nav-item-link{    padding: 2em 10px !important;}
+}
+@media(max-width: 767px){
+  
+ .product-link .product-block__title-price .amount.theme-money:after {
+    right: -50px!important;
+}
+  .subcollection .subcollectionitem {
+    max-width: 100% !important;
+}
+  .subcollectionitem a.product-link {
+    width: 100%;
+    display: flex;
+}
+  span.ga-product_price.money:after{    
+  right: 25px!important;
+    bottom: -30px !important;  
+  }
+  .header-text.overlay--v-top.overlay--h-left p{ margin-bottom: 24px !important;}
+
+ .template-collection .product-block{border-bottom: 1px solid #E4E1D4; }
+  .product-block .product-block__inner{flex-direction: row !important;}
+  .ootb-tabcordion--entry.is-active  .ootb-tabcordion--entry-container{display: block;}
+  .ootb-tabcordion--entry  .ootb-tabcordion--entry-container{display: none;}
+  .swatch-options.mobile-image{text-align: left;}
+   .price .amount.theme-money{margin: 0px  !important;}
+.toolbar-left {
+    flex-basis: 70% !important;
+    max-width: 70% !important;
+    justify-content: space-between;
+}
+  .toolbar-right {
+        flex-basis: 30% !important;
+    max-width: 30% !important;
+  }
+  .ootb-tabcordion .column{margin: 0px !important;}
+  .container.accordion{padding: 0px !important;}
+ .ootb-tabcordion .price.on-sale{margin-top: -15px;}
+  .ootb-tabcordion  .price, .template-collection .product-block .price {margin-top: -6px;}
+ #tab1-tab .amount.theme-money:after, #tab2-tab .amount.theme-money:after, #tab3-tab .amount.theme-money:after {
+    width: min-content!important;
+    right: -55px!important;
+}
+
+ #tab1-tab .amount.theme-money, #tab1-tab .price del, #tab2-tab .amount.theme-money,  #tab2-tab .price del, #tab3-tab .amount.theme-money,  #tab3-tab .price del{    text-align: left;     width: max-content;}
+  .product-block__title-price .title{
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    display: flex;
+    align-items: center;
+    letter-spacing: 1px;
+/*     text-transform: none; */
+    color: #000000;
+    text-align: left;
+}
+  .recently-viewed-grid-items, .recently-viewed-grid .image.image--shape-1{display: block; height: 100%;}
+  .second-accordion{display: flex;}
+ .ootb-tabcordion .product-block .image, .ootb-tabcordion .grid-product__image-wrap, .product-block .image {
+    flex-basis: 40%;
+    max-width: 40%;
+}
+ .ootb-tabcordion  .product-block__title-price, .ootb-tabcordion .product-block__title-price, .template-collection .product-block__title-price {
+    flex-basis: 60%;
+    max-width: 60%;
+   padding-left: 15px;
+}
+  #tab2-tab .content  {
+    border-bottom: 1px solid #E4E1D4;
+  }
+  .ootb-tabcordion.about-us  #tab2-tab .content{border-bottom: none;}
+  .product-container .product-block--gutter-40{    
+    width: calc(100% - 10px) !important; 
+     margin-bottom: 10px;
+      padding: 15px 0px !important;
+    border-bottom: 1px solid #E4E1D4;
+}
+  column.min-cols-2, .column.flex.min-cols-2 {    width: 100%;}
+  .product-container .product-block__inner{flex-direction: row;}
+ #tab1-tab .cc-carousel-mobile.cc-carousel{flex-direction: column;}
+
+}
+ @media(min-width: 767px) and (max-width: 1023px){
+   .amount.theme-money:after{    right: 29px !important;     bottom: -6px !important;
+}
+ .fourth-col{margin-top: 26px;}
+   .read-more-button{margin-bottom: -135px;}
+   span.nav-item-link-title{font-size: 12px !important;}
+  span.help{display: none !important;}
+ }
+@media(max-width: 768px){
+    button#btn {
+    display: block;
+    border: none;
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px !important;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #080033;
+    width: 100%;
+    border-radius: 4px;
+    background: #f6f6f6;
+    padding: 15px;
+    margin-top:15px;
+    margin-bottom: 30px !important;
+}
+  .ootb-tabcordion--entry{position: relative;}
+  .ootb-tabcordion--entry.is-active .up-icon{display: block !important;}
+  .ootb-tabcordion--entry.is-active .up-icon{ 
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    z-index: 1;
+     }
+  .up-icon{display: none}
+    .ootb-tabcordion--entry.is-active .up-icon{ 
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    z-index: 0;
+     }
+    .ootb-tabcordion--entry.is-active .down-icon{ 
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    z-index: 0;
+     }
+      .ootb-tabcordion--entry .down-icon{ 
+    position: absolute;
+    right: 15px;
+    top: 27px;
+    z-index: 1;
+     }
+  .ootb-tabcordion--entry .up-icon img{display: block;}
+  .ootb-tabcordion--entry.is-active .up-icon{display: block !important;}
+    .ootb-tabcordion--entry.is-active .up-icon{ 
+    position: absolute;
+    right: 15px;
+    top: 25px;
+    z-index: 1;
+     }
+.row.one-row .column.flex.max-cols-4:nth-child(n+3), .row.one-row .column.flex.max-cols-4:nth-child(n+4), .ootb-tabcordion .hidden{display: block !important;}
+ 
+  .ootb-tabcordion.about-us{margin-bottom: 60px;}
+   .about-us.ootb-tabcordion  p {
+    font-family: 'Soehne Leicht';
+    font-size: 16px;
+    color: #000000;
+    line-height: 30px;
+}
+ .template-page  .ootb-tabcordion.about-us .content .row{     padding: 20px 10px;}
+  .template-page h1.page-title{
+    font-family: Soehne Dreiviertelfett;
+    font-size: 24px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0b1e33;
+    padding-top: 2.5rem;
+  }
+  .row.data{ padding: 0px 10px;  margin-bottom: 40px;}
+span.description {
+    font-family: 'Soehne Leicht';
+    font-size: 16px;
+    line-height: 30px;
+    color: #000000;
+}
+   .price .amount.theme-money {
+     width: max-content;
+  }
+.template-index  .amount.theme-money:after {
+    width: min-content!important;
+    right: -45px!important;
+}
+  .price del{text-align: left !important;}
+  span.name {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 16px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #F5A201;
+    margin: 25px 0px;
+}
+  .author-image, .name{display: block; margin: auto;     border-radius: 50%;      text-align: center;}
+  .detail-container {
+    display: flex;
+}
+  .additional_information {
+    padding: 30px 10px;
+}
+  .product-block__title-price .title{min-height: 50px !important;}
+  span.help{display: none !important;}
+  .modal-content{width: 100% !important;     padding: 3em 2em;}
+  .header-text.overlay--v-top.overlay--h-left p{ margin-bottom: 80px;}
+  .amount.theme-money:after{width: min-content !important;    right: -15px !important;  }
+ .template-collection  .amount.theme-money:after{width: min-content !important;    right: -47px !important;  }
+  h2.brand-heading {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 20px;
+    text-align: center;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #080033;
+}
+  .p-2{    padding: 26px 21px 15px;}
+    span.collection-name1 {   
+     position: absolute;
+     bottom: 30px;
+     right: 30px;
+     font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background: #080033;
+    padding: 10px;
+    display: flex;
+    }
+  div.item {
+    padding: 15px;
+}
+
+  .storiesimg img { width: 100% !important;}
+  .desktop-image{display: none;}
+  .fourth-col{margin-top: 20px;}
+  .no-js .owl-carousel, .owl-carousel.owl-loaded{margin: auto;}
+  .owl-carousel .item{margin: 0px 5px;}
+/*   .first-col, .second-col, .third-col, .fourth-col {  width: 100%;      display: flex;      align-items: center;      margin-bottom: -15px;   justify-content: center;}  */
+
+/*   Home page Carousel Css Start */
+.owl-nav button {
+  position: absolute;
+  top: 50%;
+  background-color: #000;
+  color: #fff;
+  margin: 0;
+  transition: all 0.3s ease-in-out;
+}
+
+
+.owl-dots {
+  text-align: center;
+  padding-top: 15px;
+}
+.owl-dots button.owl-dot {
+  width: 15px;
+  height: 15px;
+  border-radius: 50%;
+  display: inline-block;
+  background: #ccc !important;
+  margin: 0 3px;
+}
+.owl-dots button.owl-dot.active {
+  background-color: #000 !important;
+}
+.owl-dots button.owl-dot:focus {
+  outline: none;
+}
+.owl-nav button {
+    position: absolute;
+    top: 50%;
+    transform: translateY(-50%);
+}
+
+.owl-nav button:focus {
+    outline: none;
+}
+
+span.collection-name{
+      display: flex;
+    font-family: 'Soehne Dreiviertelfett';
+    position: absolute;
+    bottom: 10px;
+    right: 10px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;
+    border-radius: 8px;
+    background: #080033;
+    padding: 10px;
+}
+.owl-nav span {
+    font-size: 70px;    
+    position: relative;
+    top: -5px;
+    color: lightgrey;
+}
+/*   Home page Carousel Css End */
+}
+
+.product-label {
+    bottom: 0 !important;
+    text-align: center !important;
+    left: 0 !important;
+}
+.amount.theme-money, span.ga-product_price.money{position: relative !important; margin-top: 0px !important;}
+/* .amount.theme-money:after, span.ga-product_price.money:after{
+      position: absolute;
+    content: "inc.vat";
+    height: 100%;
+    width: min-content;
+    right: -45px;
+    font-family: 'Soehne Leicht';
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    color: #013C58;
+    bottom: -5px;
+    font-weight: 400;} */
+.results{
+  font-family: 'Soehne Dreiviertelfett';
+    font-size: 10px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #000000;
+      padding-bottom: 30px;
+  display: none;
+}
+  .template-collection .product-block__title-price .title {
+    font-family: 'Soehne Leicht';
+    font-size: 16px;
+    line-height: 24px;
+    color: #000000;
+/*     text-transform: capitalize; */
+     min-height: 49px;
+  }
+ .price .amount.theme-money {
+        font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 20px !important;
+    line-height: 30px;
+    text-align: center;
+    color: #080033 !important;
+    width: max-content;
+    display: block;
+    margin: auto;
+  }
+   .price del{
+      font-family: 'Soehne Leicht';
+    font-size: 15px;
+    line-height: 18px;
+    text-align: center;
+    text-decoration-line: line-through;
+    color: #F5A201;
+    display: block;
+   }
+.template-index .tab-content { background: #fff !important;}
+.metafield-container, .product-description.rte, .tab-content {
+    font-family: 'Soehne Leicht';
+    font-size: 14px;
+    line-height: 24px;
+    color: #080033;
+    padding-left: 10px;
+  background: #f6f6f6;
+}
+.label {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 14px;
+    line-height: 24px;
+    color: #080033;
+}
+  div#price {
+    display: flex;
+    flex-direction: column-reverse;
+}
+  span.help, span.Register, span.Login {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    padding: 0px 20px;
+}
+.cc-checkbox__label{font-family: 'Soehne Leicht';}
+  
+@media(min-width: 769px){
+
+.page-with-contact-form {
+    margin-top: 40px;
+}
+  
+ .logo-nav .main-nav #qikify-tmenu-megamenu-0 li.tmenu_item.tmenu_item_level_1.tmenu_col.tmenu_col-6.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_image:hover a.tmenu_item_link{
+    background: #E9E9ED !important; color: #0b1e33!important;
+} 
+  .main-nav #qikify-tmenu-megamenu-0 li.tmenu_item.tmenu_item_layout_image.tmenu_item_level_1 a.tmenu_item_link:hover .tmenu_item_text {
+    color: #0b1e33!important;
+}
+ul.tmenu_col.tmenu_submenu_tab_control.tmenu_col-3 li{padding: 10px 20px !important;}
+  .logo-nav  .tmenu_item_active .tmenu_item_link.nav-item-link .tmenu_item_text{color: #fff !important;}
+.main-nav #qikify-tmenu-megamenu-0 li.tmenu_item.tmenu_item_level_1 a.tmenu_item_link:hover, .logo-nav  .tmenu_item_active {
+     background: #F5A201 !important; color: #fff !important;
+}
+  .main-nav #qikify-tmenu-megamenu-0 li.tmenu_item.tmenu_item_layout_image.tmenu_item_level_1 a.tmenu_item_link:hover{
+      background: #E9E9ED !important; color: #0b1e33!important;
+}
+ .main-nav #qikify-tmenu-megamenu-0 li.tmenu_item.tmenu_item_layout_image.tmenu_item_level_3 a.tmenu_item_link:hover,
+  .main-nav #qikify-tmenu-megamenu-0 li.tmenu_item.tmenu_item_layout_image.tmenu_item_level_3 a.tmenu_item_link:hover .tmenu_item_text {background: #fff !important;  color: #0b1e33!important;}
+  
+  .main-nav #qikify-tmenu-megamenu-0 li.tmenu_item.tmenu_item_level_1 a.tmenu_item_link:hover .tmenu_item_text{
+    color: #fff !important;
+}
+  
+  ul.tmenu_submenu.tmenu_submenu_type_automatic.tmenu_submenu--desktop {
+    margin-top: -15px !important;
+}
+  .tmenu_col.tmenu_submenu_tab_content, ul.tmenu_submenu.tmenu_submenu_type_mega.tmenu_submenu--desktop.tmenu_submenu_mega_position_fullwidth {
+    background: #E9E9ED;
+}
+
+ #qikify-tmenu-megamenu-0 li.tmenu_submenu_tab_active span.tmenu_item_text, li.tmenu_item.tmenu_item_has_child.tmenu_item_active .tmenu_item_link.nav-item-link .tmenu_item_text,
+ .tmenu_col-3 li.tmenu_item.tmenu_item_level_2.tmenu_col.tmenu_item_submenu_type_automatic.tmenu_item_layout.tmenu_item_layout_text:hover .tmenu_item_text{
+    color: #fff !important;
+}
+  .tmenu_item_active{background: #F5A201;}
+  #qikify-tmenu-megamenu-0 li.nav-item:nth-child(8) a{padding-left: 20px !important;}
+ #qikify-tmenu-megamenu-0 li.nav-item:nth-child(14) a{padding-right: 20px !important;}
+
+/*   li.tmenu_item_layout.tmenu_item_layout_text:hover{background-color: #F5A201;} */
+ ul.tmenu_submenu--desktop .tmenu_item_layout_text span.tmenu_item_text{
+    font-size: 12px !important;
+    color: #514E64;
+  }
+   li.tmenu_item.tmenu_item_level_1 a.tmenu_item_link{padding: 10px 20px !important;}
+ .tmenu_submenu  .tmenu_submenu_tab_control .tmenu_submenu_tab_active{background: #F5A201 !important;       padding: 10px 20px !important;}
+  .tmenu_col.tmenu_submenu_tab_control.tmenu_col-3{    background: #EFEFF2 !important;}
+    button#btn {
+    border: none;
+    font-family: Soehne Dreiviertelfett;
+    font-style: normal;
+    font-size: 12px!important;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #080033;
+    border-radius: 4px;
+    margin:15px 0px;
+    padding: 10px 0px;
+}
+  .up-icon, .down-icon{display: none;}
+.trustpilot-container{padding: 40px 0px 85px 0px; background: #f6f6f6;}
+  
+  .recently-viewed-wrapper h2{padding: 0px 20px}
+  .tab-content.container{padding: 35px 22px; margin-bottom: 40px;}
+    span.collection-name {   
+      display: flex;
+     position: absolute;
+     bottom: 10px;
+     right: 10px;
+     font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-weight: 500;
+    font-size: 14px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #FFFFFF;
+    border-radius: 8px;
+    background: #080033;
+    padding: 10px;}
+    img{width: 100%;}
+    .ootb-tabcordion .col-1{padding-right: 40px;}
+    .about-us.ootb-tabcordion  p {
+    font-family: 'Soehne Leicht';
+    font-size: 16px;
+    color: #000000;
+    line-height: 30px;
+}
+  .about-us.ootb-tabcordion .row{margin: 50px 0px;}
+  h1.page-title.cc-animate-init.-in.cc-animate-complete {
+    font-family: 'Soehne Dreiviertelfett';
+    font-size: 40px;
+    line-height: 64px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #0B1E33;
+    padding-top: 3rem;
+    padding-bottom: 1rem;
+}
+  span.Login{padding-right: 6px !important}
+  .localization.localization--header.announcement-bar__spacer{    justify-content: flex-end !important;}
+  .data-container, .ootb-tabcordion .row{display: flex;}
+  .detail-container{display: flex;      padding: 5px 0px;}
+  .product-description.rte, .col-1{flex-basis: 50%; max-width: 50%;}
+  .value-empty .product-description.rte{flex-basis: 100%; max-width: 100%;}
+  .additional_information, .col-2{flex-basis: 50%;   max-width: 50%; padding-left: 40px;}
+  .additional_information .row.container{display: flex;       width: 100%;}
+  .additional_information .col-1, .additional_information .col-2{width: 50%}
+  h1.product-title.product-detail__gap-sm {
+    font-family: 'Soehne Leicht';
+    font-size: 28px;
+    line-height: 40px;
+    color: #0B1E33;
+    margin-top: -20px;
+    text-transform: none;
+}
+
+  .descriptn .modal-heading{margin: 1em 0em 1em 0em !important;}
+ .collection-header h1.page-title, .descriptn .modal-heading {
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 40px;
+    /* line-height: 64px; */
+    letter-spacing: 2px;
+    text-transform: none;
+    color: #0B1E33;
+    margin-bottom: 0px;
+}
+  .header-text p{font-family: 'Soehne Leicht';}
+.collection-header{max-width: 100% !important; margin-top: 20px;}
+.banner-image{padding: 30px 0px;       display: block;    margin: auto;}
+
+
+
+.product-block__title-price  .title{
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 12px;
+    line-height: 16px;
+    align-items: center;
+    text-align: center;
+    letter-spacing: 1px;
+/*     text-transform: uppercase; */
+    color: #000000;
+    min-height: 34px;
+  }
+  .product-grid.grid .column{padding: 10px !important;}
+  .tab-content .data{display: flex;      padding: 40px;}
+  .tab-content .row .author-image{flex-basis: 12%; max-width: 12%; border-radius: 50%;}
+  .tab-content span.description {    flex-basis: 69%; max-width: 69%;   display: flex;     align-items: center;      font-family: 'Soehne Leicht';    font-size: 16px;    line-height: 30px;}
+  .mobile-image{display: none;}
+  .collection .item {    flex-basis: 24%;    max-width: 24%;    position: relative;}
+  .brand-section .row{display:flex;      justify-content: center;       margin: 0px !important;}
+  .brand-heading{text-align: center; padding-bottom: 20px;}
+  .brand-section .item {    flex-basis: 24%;    max-width: 24%;      text-align: center;  }
+  .brand-section .item {     margin-right: 10px;  }
+  .announcement-bar{     padding: 0;}
+  .first-col, .second-col, .third-col, .fourth-col {  width: 100%;      display: flex;        align-items: center;     margin-bottom: -15px; justify-content: center } 
+/*   #content .section{margin: 30px 0px !important;} */
+ li.tmenu_item_level_0 span.tmenu_item_text {
+    font-family: 'Soehne Dreiviertelfett' !important;
+    font-size: 14px !important;
+    line-height: 16px !important;
+    letter-spacing: 2px !important;
+    text-transform: uppercase !important;
+    color: #0B1E33;
+}
+  li.tmenu_item_level_2:hover{background: #F5A201 !important;}
+  li.tmenu_item_level_2:hover .tmenu_item_text{color: #fff !important;} 
+    span.name { 
+    font-family: 'Soehne Dreiviertelfett';
+    font-size: 14px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase; color: #F5A201;  flex-basis: 17%;    max-width: 17%; align-items: center;    display: flex;       padding-left: 30px;
+}
+  .toolbar-icons{
+    width: 165px !important;
+    font-family: 'Soehne Leicht';
+    font-style: normal;
+    font-weight: 700;
+    font-size: 11px;
+    line-height: 16px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+    color: #fff;}
+  .toolbar-icons .toolbar-cart::before{position: absolute; content: 'BASKET'; height: 100%; width: 100%; right: -40px;}
+  .main-search__form button{background: #F5A201 !important; border: none !important;}
+  .main-search--text-box-large .main-search__form{ border: none !important;      max-width: 500px;}
+  .date-and-time{
+        flex-basis: 24%;
+    max-width: 24%;
+    width: 336px;
+  }
+  .announcement-text{    flex: 53%;
+    max-width: 53%;}
+  .phone-number{
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 20px;
+    line-height: 30px;
+    color: #F5A201;
+  }
+  .timing{
+    font-family: 'Soehne Leicht';
+    font-size: 14px;
+    line-height: 24px;
+    padding-left: 10px;
+}
+  .localization.localization--header.announcement-bar__spacer{ display: flex;    justify-content: flex-start;     align-items: center;      flex-basis: 23%;
+    max-width: 23%;}
+
+  .announcement-bar__text{display: flex; justify-content: center; align-items: center;}
+  }
+
+@media(min-width: 768px){
+  .subcollectionitem p{ margin: 0px !important;}
+span.ga-product_price.money:after{    right: -50px !important;}
+  .collection-box{display: flex !important;      justify-content: space-between;}
+}
+@media (min-width: 1366px) and (max-width: 1440px){
+ .template-collection .amount.theme-money:after{    right: 13px;
+    bottom: -25px;
+}
+}
+@media(min-width:1360px){
+   .template-index .amount.theme-money:after, .template-product .amount.theme-money:after{
+  right: -50px !important;
+   }
+}
+.product-block .price.on-sale .amount {
+    margin-right: auto;
+}
+@media(min-width: 768px) and (max-width: 1024px){
+
+ .nav-container a.nav-item-link{
+    font-size: 9.5px !important;
+  }
+  .container.nav-container {
+    width: 100%;
+    padding: 0px 5px !important;
+}
+.mobile-nav-wrapper.js-menu--is-open {display: block !important;}
+.site-header__menu {display: block !important;}
+.site-nav {display: none !important;}
+  .product-block__title-price .title{text-align: center;}
+  .product-container:not(.product-container--quickbuy).product-container--medium .product-gallery{    position: sticky;   top: 0;}
+  .product-grid.grid .column{padding: 10px !important;}
+.amount.theme-money:after{     right: -50px !important;}
+  .recently-viewed-img.rimage__image{height: 250px !important; width: 250px !important;}
+}
+@media(max-width: 1024px){
+    .recently-viewed-grid{ 
+    display: flex !important;
+    flex-direction: row;
+    width: 100%;
+    white-space: nowrap;
+    overflow-x: scroll;
+      }
+    .read-more-button{margin-bottom: -150px;}
+  .recently-viewed-grid-items .product-block .image, .grid-product__image-wrap,
+  .recently-viewed-grid-items .image__primary,
+  .recently-viewed-grid-items .rimage-outer-wrapper,
+  img.recently-viewed-img.rimage__image{
+    height: 100% !important;
+    object-fit: contain;
+  }
+  .recent-heading{
+    width: 300px;
+    display: block;
+    margin: auto;
+    white-space: break-spaces;
+  }
+ .recently-viewed-grid .layout-align-above{width: 300px;}
+  .ootb-tabcordion .container{ padding: 0px !important;}
+}
+@media(min-width: 1441px) and (max-width: 1659px){
+.main-nav .nav-item .nav-item-link{
+      padding: 2em 2.1em !important;
+}
+}
+@media(max-width: 768px){
+  a.nav-item-link, .sub-nav-item-link, .close-sub-nav {
+    font-size: 11px;
+    text-transform: uppercase;
+    font-family: 'Soehne Dreiviertelfett';
+    color: #0B1E33;
+    letter-spacing: 2px;
+}
+  .product-title.product-detail__gap-sm{
+        font-family: 'Soehne Leicht';
+    font-size: 28px;
+    line-height: 40px;
+    color: #080033;
+  }
+.trustpilot-container{padding: 40px 0px ; background: #f6f6f6; }
+  .recently-viewed-wrapper h2{padding-left: 15px;}
+ .announcement-text .trustpilot-widget, span.timing {
+    display: none;
+  }
+  .localization--header{
+        display: flex;
+    width: 100%;
+    justify-content: flex-end;
+  }
+  .toolbar-social{
+    display: block !important;  
+    font-family: 'Soehne Dreiviertelfett';
+    font-style: normal;
+    font-size: 16px;
+    line-height: 30px;
+    color: #F5A201;
+    width: 180px !important;
+}
+  span.Login, span.Register {
+    padding-right: 5px !important;
+}
+  .text-with-icon .col {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin-bottom: -15px;
+/*     padding-top: 15px; */
+}
+ 
+  .product-grid.grid {
+     margin-right: 0px!important;
+}
+}
+@media(min-width: 750px) and (max-width: 768px){
+ .nav-container .main-nav .nav-item .nav-item-link {
+    padding: 2.1em 5px !important;
+    font-family: Soehne Dreiviertelfett;
+    color: #0b1e33;
+    text-transform: uppercase;
+    font-weight: 700;
+}
+  .price del {
+    text-align: center !important;
+}
+ .season_tabs.mob .price .amount.theme-money{margin: auto;}
+}
+@media(max-width: 280px){
+.toolbar-cart{display: none !important;}
+}
+
+@media(min-width: 769px) and (max-width: 1024px){
+  li.nav-item span.tmenu_item_text{font-size: 10px !important;}
+.header-container  .nav-container .main-nav .nav-item .nav-item-link{  padding: 2.1em 7px !important; }
+ #tab2-tab .ootb-tabcordion--entry-container {
+    overflow: initial;
+    margin-bottom: 81px;
+}
+  #tab2-tab  .product-detail-tag {
+    margin-top: 115px;
+}
+}
+.toggle-text {
+	 max-width: 400px;
+	 margin: 50px auto;
+	 text-align: center;
+}
+ .toggle-text-content span {
+	 display: none;
+}
+ .toggle-text-link {
+	 display: block;
+	 margin: 20px 0;
+}
+
+@media(min-width: 1025px) and (max-width: 1360px){
+ li.nav-item span.tmenu_item_text {
+    font-size: 11px!important;
+ }
+
+}
+@media(min-width: 1361px) and (max-width: 1510px){
+ li.nav-item span.tmenu_item_text {
+    font-size: 13px!important;
+ }
+  .main-nav .nav-item .nav-item-link {
+    padding: 2em 1.5em!important;
+}
+}
+
+ @media(min-width: 1281px) and (max-width: 1360px){
+.main-nav .nav-item .nav-item-link{    padding: 2em 25px !important;}
+}
+
+.tmenu_alignment_center .tmenu_nav{justify-content: space-between !important;}
+.product-declaration-text{
+  font-family:Soehne Leicht !important;
+  font-size:14px;
+}
+.product-block.product-block--flex-spacer.flex.column.max-cols-20.min-cols-4 {
+    display: none;
+}
+
+.qty-adjuster__inner .qty-adjuster__value {
+  color: #080033;
+}
+.ga-product_addtocart {
+  display: none !important;
+}
+.ga-product_title   {
+  font-family: Soehne Dreiviertelfett !important;
+  font-style: normal !important;
+  font-size: 12px !important;
+  line-height: 16px !important;
+  align-items: center !important;
+  text-align: center !important;
+  letter-spacing: 1px !important;
+  text-transform: uppercase !important;
+  color: #000 !important;
+  min-height: 34px !important;
+}
+.gowl-item.active {
+  border: 0 !important;
+}
+span.ga-product_price.money {
+    font-family: Soehne Dreiviertelfett !important;
+    font-style: normal !important;
+    font-size: 20px!important ;
+    line-height: 30px !important;
+    text-align: center !important;
+    color: #080033!important;
+    width: max-content !important;
+    display: block !important;
+    margin: auto !important;
+}
+
+/* #mmWrappersidecart {
+  text-align: center;
+} */
+p.abc {
+    margin-bottom: 0px;
+}
+.shipping_bar {
+background-color: #E9A63A;
+    color: #060131;
+    text-align: center;
+    font-family: arial;
+    padding: 4px 4px 0px;
+    font-size: 14px;
+    line-height: 30px;
+    direction: ltr;
+}
+.homeRecent:has(.klevu-recs.klevuTarget:empty){
+  display:none;
+}
+
+.announcementMain{
+    width: 100%;
+    display: grid;
+    grid-template-columns: 1fr 2fr 1fr;
+    height: 48px;
+}
+.announcementMain > div{
+  display:flex;
+  align-items:center;
+  height:100%;
+
+  p{
+    margin:0;
+    display: flex;
+    align-items: center;
+    gap: 15px;
+  }
+}
+.announcementMain > div.middle-side{
+  display: block;
+}
+.announcementMain .trustpilot-widget{
+   position: relative;
+   top: 50%;
+   transform: translatey(-50%);
+}
+.announcement{
+  box-shadow: inset 0 -1px #ffffff9c;
+}
+.announcement__col--right{
+   gap:50px;
+   font-family: Soehne Dreiviertelfett;
+   text-transform: uppercase;
+   letter-spacing: 1px;
+}
+@media screen and (max-width:1100px){
+  .announcementMain {
+      grid-template-columns: 1fr 1fr 1fr;
+  }
+  .announcement__col--right{
+     gap:20px !important;
+    justify-content: end;
+  }
+  .phone-number + span{
+    display:none;
+  }
+}
+@media screen and (max-width:900px){
+  .announcementMain > div.middle-side{
+    display:none;
+  }
+  .announcementMain {
+      grid-template-columns: 1fr 1fr;
+      a[href="/pages/help"]{
+      display:none;
+    }
+  }
+  .left-side .phone-number{
+      font-family: Soehne Dreiviertelfett;
+      font-style: normal;
+      font-size: 16px;
+      line-height: 30px;
+      color: #f5a201;
+  }
+}
+.js-search-results .predictive-search{
+  display:none !important;
+}
+wishlist-link .wk-button:hover {
+    --icon-stroke: #ffffff !important;
+    color: #ffffff !important;
+}
+
+
+.cc-collection-list .card__info{
+  display:none;
+}
+.breadcrumbs-list{
+  list-style-type:none;
+
+  a{
+    color:#080033;
+
+    &:hover{
+      color:#e9a63a;
+    }
+  }
+}
+
+.product-vendor-sku{
+  font-size: 15px;
+}
+.product-info__title + .product-info__block{
+  margin:16px 0;
+}
+
+variant-picker .option-selector{
+  custom-select{
+    display: inline-block;
+    position: relative;
+    border: 1px solid #dedede;
+    background: #fff;
+    color: #616161;
+    padding: 0;
+    text-align: left;
+    width: 250px;
+    max-width: 100%;
+    vertical-align: middle;
+    border-radius: 3px;
+
+    button{
+      border-radius: 0;
+      border: none;
+      padding-left: 15px;
+      padding-right: 20px;
+    }
+  }
+  .input:focus, select:focus {
+    border:none;
+    outline: 0;
+    box-shadow:none;
+  }
+}
+.site-map{
+  max-width:1240px;
+  width:100%;
+  margin:auto;
+  padding:0 20px 50px 20px;
+  h1{
+    font-size:24px;
+    text-align:left;
+  }
+  h2{
+    font-size:22px;
+    margin:22px 0 !important;
+  }
+  .sitemapListWrapper{
+    display:grid;
+    grid-template-columns:1fr 1fr 1fr 1fr;
+
+    &::before{
+      display:none;
+    }
+    &::after{
+      display:none;
+    }
+  }
+  @media screen and (max-width:1200px){
+    .sitemapListWrapper{
+      grid-template-columns:1fr 1fr;
+    }
+  }
+  @media screen and (max-width:767px){
+    .sitemapListWrapper{
+      ul{
+        padding-left:0;
+      }
+    }
+  }
+}
+
+.cart-drawer__checkout-buttons{
+  cart-terms{
+    display:none;
+  }
+}
+#cart-drawer-form{
+  .qty-input__input{
+    color:#000;
+  }
+  .cart-item__remove .icon{
+    width:22px;
+    height:22px;
+  }
+}
+
+@media screen and (max-width:1200px){
+.upz-block .page-width{
+  width:100% !important;
+}
+}
+@media screen and (max-width:800px){
+    .upz-grid-list {
+        justify-items: center;
+    }
+}
+quantity-input .qty-input{
+  border: 1px solid whitesmoke !important;
+  border-radius: 4px !important;
+  .qty-input__btn{
+    color:#000 !important;
+  }
+  .qty-input__input{
+    color:#000 !important;
+    background-color:transparent !important;
+  }
+  .btn--minus:before, .btn--plus:before{
+    height: 1px !important;
+  }
+  .btn--plus:after{
+    width: 1px !important;
+  }
+}

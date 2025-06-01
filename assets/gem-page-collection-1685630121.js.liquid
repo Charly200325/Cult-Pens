@@ -1,0 +1,343 @@
+{% comment %}
+	GEMPAGES BUILDER (https://apps.shopify.com/gempages)
+
+	You SHOULD NOT modify source code in this file because
+	It is automatically generated from GEMPAGES BUILDER
+	Try to edit page with the live editor.
+{% endcomment %}
+
+    
+  
+    (function( jQuery ){
+    var $hero = jQuery('#m-1675958589949');
+    var $module = jQuery('#m-1675958589949').children('.module');
+    var mode = jQuery('.gryffeditor').hasClass('editing') ? 'dev' : 'production';
+    
+    $hero.removeAttr('style');
+
+    var collectionImg = $module.attr('data-collection-image');
+    if (collectionImg != undefined && collectionImg != "") {
+        $hero.css('background-image', 'url(' + collectionImg + ')');
+    } else {
+        var defaultImg = $module.attr('data-image');
+        $hero.css('background-image', 'url(' + defaultImg + ')');
+    }
+
+    var effect = $module.attr('data-effect');
+    var transition = $module.attr('data-transition');
+
+    $hero.removeClass('effect-zoom').removeClass('effect-parallax');
+    if (effect != 'none') {
+        $hero.addClass(effect);
+    }
+    
+    if (effect == 'effect-zoom') {   
+        $hero.css('background-attachment', 'initial');  
+
+        setTimeout(function() {
+            var backgroundImage = $hero.css('background-image');
+            var backgroundSize = $hero.css('background-size');
+            var backgroundPosition = $hero.css('background-position');
+            $module.siblings('.gf_hero-bg-wrap').css({
+                'background-image'      : 'inherit',
+                'background-size'       : 'inherit',
+                'background-position'   : 'inherit',
+                '-webkit-transition'    : 'transform ' + transition + 's ease-in-out',
+                '-moz-transition'       : 'transform ' + transition + 's ease-in-out',
+                '-ms-transition'        : 'transform ' + transition + 's ease-in-out',
+                '-o-transition'         : 'transform ' + transition + 's ease-in-out',
+                'transition'            : 'transform ' + transition + 's ease-in-out'
+            })
+            $module.siblings('.gf_hero-bg-wrap').children('.gf_hero-bg').css({
+                'background-image'      : 'inherit',
+                'background-size'       : 'inherit',
+                'background-position'   : 'inherit',
+                '-webkit-transition'    : 'transform ' + transition + 's ease-in-out',
+                '-moz-transition'       : 'transform ' + transition + 's ease-in-out',
+                '-ms-transition'        : 'transform ' + transition + 's ease-in-out',
+                '-o-transition'         : 'transform ' + transition + 's ease-in-out',
+                'transition'            : 'transform ' + transition + 's ease-in-out'
+            });
+        }, 300);
+    } else if (effect == 'effect-parallax') {
+        $hero.css('background-attachment', 'fixed');
+    } else {
+        $hero.css('background-attachment', 'initial');
+    }
+})( window.GemQuery || jQuery );
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+    
+  
+                          (function( jQuery ){
+                              try{
+                                  if(jQuery().gfV2Lazyload){
+                                      var $module = jQuery(window);
+                                      $module.gfV2Lazyload({delay:125})
+                                  }
+                              }catch(err){
+                                  console.error(err)
+                              }
+                          })( window.GemQuery || jQuery );
+                      

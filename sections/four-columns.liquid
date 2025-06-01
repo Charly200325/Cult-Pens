@@ -1,0 +1,181 @@
+  {% if section.settings.one-link != blank %}
+    <style>
+      .four-columns-container {
+        display: flex;
+        flex-direction: row;
+        align-items: top;
+        justify-content: center;
+        margin-top: 15px;
+      }
+      @media (max-width: 800px) {
+          .four-columns-container {
+            flex-direction: column;
+        }
+        .four-columns-content {
+          width: 100% !important;
+        }
+      }
+      .four-columns-content {
+        width: 25%;
+        text-align: center;
+      }
+      @media (min-width: 801px) {
+        .four-columns-one {
+          margin-left: 15px;
+          margin-right: 10px;
+        }
+        .four-columns-two {
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        .four-columns-three {
+          margin-left: 5px;
+          margin-right: 10px;
+        }
+        .four-columns-four {
+          margin-left: 5px;
+          margin-right: 15px;
+        }
+        }
+      .four-columns-one > .metafield-rich_text_field > p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .four-columns-two  > .metafield-rich_text_field > p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .four-columns-three  > .metafield-rich_text_field > p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      .four-columns-four  > .metafield-rich_text_field > p {
+        margin-left: 20px;
+        margin-right: 20px;
+      }
+      h3.four-columns-title {
+        font-size: 120%;
+      }
+      h3.four-columns-title a {
+        color: black;
+      }
+    </style>
+    
+    <div class="four-columns-container">
+      <div class="four-columns-one four-columns-content">
+        {% if section.settings.one-img != blank %}<a href="{{ section.settings.one-link }}"><img src="{{ section.settings.one-img | image_url: width: 800  }}"></a>{% endif %}
+        <h3 class="four-columns-title"><a href="{{ section.settings.one-link }}">{{ section.settings.one-title | strip_html }}</a></h3>
+        <p class="four-columns-one-text">{{ section.settings.one-text }}</p>
+      </div>
+      <div class="four-columns-two four-columns-content">
+        {% if section.settings.two-img != blank %}<a href="{{ section.settings.two-link }}"><img src="{{ section.settings.two-img | image_url: width: 800  }}"></a>{% endif %}
+        <h3 class="four-columns-title"><a href="{{ section.settings.two-link }}">{{ section.settings.two-title | strip_html }}</a></h3>
+        <p class="four-columns-two-text">{{ section.settings.two-text }}</p>
+      </div>
+      <div class="four-columns-three four-columns-content">
+        {% if section.settings.three-img != blank %}<a href="{{ section.settings.three-link }}"><img src="{{ section.settings.three-img | image_url: width: 800  }}"></a>{% endif %}
+        <h3 class="four-columns-title"><a href="{{ section.settings.three-link }}">{{ section.settings.three-title | strip_html }}</a></h3>
+        <p class="four-columns-three-text">{{ section.settings.three-text }}</p>
+      </div>
+      <div class="four-columns-four four-columns-content">
+        {% if section.settings.four-img != blank %}<a href="{{ section.settings.four-link }}"><img src="{{ section.settings.four-img | image_url: width: 800  }}"></a>{% endif %}
+        <h3 class="four-columns-title"><a href="{{ section.settings.four-link }}">{{ section.settings.four-title | strip_html }}</a></h3>
+        <p class="four-columns-four-text">{{ section.settings.four-text }}</p>
+      </div>
+    </div>
+  {% endif %}
+
+{% schema %}
+  {
+    "name": "Four Columns",
+    "settings": [
+      {
+        "type": "image_picker",
+        "label": "Col One Image (mobile top)",
+        "id": "one-img"
+      },
+      {
+        "type": "url",
+        "label": "Col One link",
+        "id": "one-link"
+      },
+      {
+        "type": "text",
+        "label": "Col One title",
+        "id": "one-title"
+      },
+      {
+        "type": "richtext",
+        "label": "Col One text",
+        "id": "one-text"
+      },
+      {
+        "type": "image_picker",
+        "label": "Col Two Image",
+        "id": "two-img"
+      },
+      {
+        "type": "url",
+        "label": "Col Two link",
+        "id": "two-link"
+      },
+      {
+        "type": "text",
+        "label": "Col Two title",
+        "id": "two-title"
+      },
+      {
+        "type": "richtext",
+        "label": "Col Two text",
+        "id": "two-text"
+      },
+
+      {
+        "type": "image_picker",
+        "label": "Col Three Image",
+        "id": "three-img"
+      },
+      {
+        "type": "url",
+        "label": "Col Three link",
+        "id": "three-link"
+      },
+      {
+        "type": "text",
+        "label": "Col Three title",
+        "id": "three-title"
+      },
+      {
+        "type": "richtext",
+        "label": "Col Three text",
+        "id": "three-text"
+      },
+
+      {
+        "type": "image_picker",
+        "label": "Col Four Image",
+        "id": "four-img"
+      },
+      {
+        "type": "url",
+        "label": "Col Four link",
+        "id": "four-link"
+      },
+      {
+        "type": "text",
+        "label": "Col Four title",
+        "id": "four-title"
+      },
+      {
+        "type": "richtext",
+        "label": "Col Four text",
+        "id": "four-text"
+      }
+    ],
+    "presets": [
+      {
+        "name": "Four Columns"
+      }
+    ]
+  }
+{% endschema %}
